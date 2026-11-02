@@ -67,12 +67,20 @@ city.addEventListener('change', () => { vals = { ...PRESETS[city.value] }; rende
 rate.addEventListener('input', total);
 render();
 
-// Highlight current section in nav
+// Tabs: one section at a time, picked by the URL hash (#work etc.)
 const links = [...document.querySelectorAll('.nav a')];
-const io = new IntersectionObserver(es => es.forEach(e => {
-  if (!e.isIntersecting) return;
-  links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
-  const on = links.find(a => a.classList.contains('on')), bar = on && on.parentElement;
-  if (bar) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
-}), { rootMargin: '-40% 0px -55% 0px' });
-document.querySelectorAll('main section').forEach(s => io.observe(s));
+const sections = [...document.querySelectorAll('main section')];
+function show(id, scroll) {
+  if (!sections.some(s => s.id === id)) id = sections[0].id;
+  sections.forEach(s => s.hidden = s.id !== id);
+  links.forEach(a => {
+    const on = a.getAttribute('href') === '#' + id;
+    a.classList.toggle('on', on);
+    if (on) { a.setAttribute('aria-current', 'page'); a.parentElement.scrollLeft = a.offsetLeft - (a.parentElement.clientWidth - a.offsetWidth) / 2; }
+    else a.removeAttribute('aria-current');
+  });
+  const top = document.querySelector('.hero').offsetHeight;
+  if (scroll && scrollY > top) scrollTo(0, top);
+}
+addEventListener('hashchange', () => show(location.hash.slice(1), true));
+show(location.hash.slice(1), false);
