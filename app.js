@@ -70,6 +70,9 @@ render();
 // Highlight current section in nav
 const links = [...document.querySelectorAll('.nav a')];
 const io = new IntersectionObserver(es => es.forEach(e => {
-  if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+  if (!e.isIntersecting) return;
+  links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+  const on = links.find(a => a.classList.contains('on')), bar = on && on.parentElement;
+  if (bar) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
 }), { rootMargin: '-40% 0px -55% 0px' });
 document.querySelectorAll('main section').forEach(s => io.observe(s));
