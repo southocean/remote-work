@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-04",
-  "status": "First routine check on 4 Nov: Reuseit, TeknikFix, Inrego and MacRent showed no price or stock changes and no better deals. Inet blocks automated loading, but its X13 G3 still shows 5,990 kr incl. as an order item (8 working days).",
+  "status": "Re-checked all 7 items at Reuseit, TeknikFix and Inrego (prices and stock unchanged) and scanned Reuseit, TeknikFix, Inrego and MacRent with no better deals or Deal alerts. Couldn't verify Inet (blocks automated loading), so the X13 G3 stays at 5,990 kr incl. Didn't re-check the NetOnNet new reference.",
   "items": [
     {
       "id": "x1c-g9-reuseit",
