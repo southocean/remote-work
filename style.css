@@ -153,3 +153,6 @@ footer{padding:28px 16px 40px}
 /* Laptop tab */
 .card .price{font-size:1.25rem;font-weight:700;color:var(--accent)}
 #laptop .grid3{margin-bottom:8px}
+.short td{vertical-align:middle}
+.short .spec{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
+.short td:nth-child(2){white-space:nowrap;font-weight:700}
