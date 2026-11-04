@@ -84,3 +84,26 @@ function show(id, scroll) {
 }
 addEventListener('hashchange', () => show(location.hash.slice(1), true));
 show(location.hash.slice(1), false);
+
+// Laptop shortlist, rendered from laptops.json (updated daily by a cloud routine)
+(async () => {
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+  const kr = n => n == null ? '–' : Number(n).toLocaleString('en-US');
+  const link = (it, label) => /^https:\/\//.test(it.url || '') ? `<a href="${esc(it.url)}" target="_blank" rel="noopener"><b>${esc(label)}</b></a>` : `<b>${esc(label)}</b>`;
+  let d;
+  try { d = await (await fetch('laptops.json', { cache: 'no-cache' })).json(); }
+  catch { $('lt-status').textContent = 'Could not load the shortlist (laptops.json).'; return; }
+  $('lt-status').innerHTML = `Last checked <b>${esc(d.checked)}</b>. ${md(d.status)}`;
+  const items = d.items || [];
+  $('lt-picks').innerHTML = items.filter(i => i.pick).map(i =>
+    `<div class="card accent"><b>${esc(i.pick)}</b><p>${link(i, i.model)}, ${esc(i.spec)}, ${esc(i.grade)}<br><span class="price">${i.approx ? '~' : ''}${kr(i.price_ex)} kr</span> <span class="muted small">· ${esc(i.shop)}${i.price_incl ? ` (${kr(i.price_incl)} incl.)` : ''}</span><br>${md(i.pick_text)}</p></div>`).join('');
+  $('lt-rows').innerHTML = items.map(i =>
+    `<tr${i.highlight ? ' class="hl"' : ''}><td>${link(i, i.model)}<span class="spec">${esc(i.spec)}</span></td><td>${kr(i.price_ex)}</td><td>${md(i.why)}</td><td class="opt">${esc(i.shop)} · ${esc(i.grade)}${i.price_incl ? ` (${kr(i.price_incl)} incl.)` : ''}</td></tr>`).join('');
+  const r = d.new_reference;
+  if (r) $('lt-ref').innerHTML = `For comparison, new: ${link(r, r.model)}: <b>${kr(r.price_ex)} kr</b> ex moms at ${esc(r.shop)}. ${md(r.note)}`;
+  $('lt-notes').innerHTML = (d.notes || []).map(n => `<p class="muted small">${md(n)}</p>`).join('');
+  $('lt-changes').innerHTML = (d.changes || []).slice(0, 30).map(c => `<li><b>${esc(c.date)}</b>: ${md(c.text)}</li>`).join('');
+  $('lt-dropped').innerHTML = (d.dropped || []).map(x => `<li>${md(x)}</li>`).join('');
+})();
