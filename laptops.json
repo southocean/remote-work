@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-04",
-  "status": "Re-checked all 7 items at Reuseit, TeknikFix and Inrego (prices and stock unchanged) and scanned Reuseit, TeknikFix, Inrego and MacRent with no better deals or Deal alerts. Couldn't verify Inet (blocks automated loading), so the X13 G3 stays at 5,990 kr incl. Didn't re-check the NetOnNet new reference.",
+  "checked": "2026-11-05",
+  "status": "Reuseit's M1 Air (Bra) and M2 Air are sold out, so the M1 swaps to the cheaper Okej listing and the TeknikFix M2 Air takes Best value Mac. Other prices unchanged; couldn't verify Inet (blocks automated loading) or the NetOnNet new reference.",
   "items": [
     {
       "id": "x1c-g9-reuseit",
@@ -50,34 +50,18 @@
       "approx": true
     },
     {
-      "id": "mba-m1-reuseit",
+      "id": "mba-m1-okej-reuseit",
       "kind": "mac",
       "model": "MacBook Air 13\"",
       "spec": "M1 · 16 GB · 512 GB · 2020",
-      "url": "https://reuseit.se/sv/product/apple-macbook-air-m1-2020-apple-m1-cores-8-16-gb-512-gb-silver-good",
+      "url": "https://reuseit.se/sv/product/apple-macbook-air-m1-2020-apple-m1-cores-8-16-gb-512-gb-silver-fair",
       "shop": "Reuseit",
-      "grade": "Bra",
-      "price_ex": 5599,
-      "price_incl": 6999,
-      "why": "**Cheapest Mac.** Still quick for writing and coding, but it's 6 years old, so battery wear is the risk",
+      "grade": "Okej",
+      "price_ex": 5199,
+      "price_incl": 6499,
+      "why": "**Cheapest Mac.** Still quick for writing and coding, but \"Okej skick\" (visible wear) and 6 years old, so battery wear is the risk",
       "highlight": false,
       "pick": null,
-      "approx": true
-    },
-    {
-      "id": "mba-m2-reuseit",
-      "kind": "mac",
-      "model": "MacBook Air 13\"",
-      "spec": "M2 · 16 GB · 512 GB · 2022",
-      "url": "https://reuseit.se/sv/product/apple-macbook-air-m2-2022-apple-m2-cores-8-16-gb-512-gb-silver-good",
-      "shop": "Reuseit",
-      "grade": "Bra",
-      "price_ex": 7599,
-      "price_incl": 9499,
-      "why": "**Best value Mac.** Modern design, fanless, light. About half the price of a new Air",
-      "highlight": true,
-      "pick": "Best value Mac",
-      "pick_text": "The travel Mac at about half the price of a new M5 Air. Fanless, ~1.24 kg, Swedish keyboard.",
       "approx": true
     },
     {
@@ -90,10 +74,11 @@
       "grade": "A",
       "price_ex": 10392,
       "price_incl": 12990,
-      "why": "**Safest used Air.** A-grade, battery guaranteed above 80%, 12-month warranty plus 6 months on the battery. Shop in Stockholm",
-      "highlight": false,
-      "pick": null,
-      "approx": false
+      "why": "**Best value Mac.** Also the safest used Air: A-grade, battery guaranteed above 80%, 12-month warranty plus 6 months on the battery. Shop in Stockholm",
+      "highlight": true,
+      "pick": "Best value Mac",
+      "approx": false,
+      "pick_text": "The only M2 Air left that fits: A-grade, battery guaranteed above 80%, 12-month warranty. Fanless, ~1.24 kg, Swedish keyboard."
     },
     {
       "id": "mbp14-m2pro-inrego",
@@ -124,6 +109,8 @@
     "Reuseit sells some items under the margin scheme (VMB) and marks them \"Denna produkt säljs enligt vinstmarginalbeskattning\". The listings above showed **no such note** and list prices as \"inkl. moms\". Ask Reuseit to confirm full moms on the invoice before ordering. TeknikFix itemises moms at checkout and shows ex-moms prices in business mode."
   ],
   "dropped": [
+    "**MacBook Air 13\" M2 16/512** (Reuseit, 7,599): sold out (2026-11-05)",
+    "**MacBook Air 13\" M1 16/512, Bra** (Reuseit, 5,599): sold out (2026-11-05); the Okej listing at 5,199 replaces it",
     "**T14 G1 i7 512** (Inet, 4,792): same price as the X13 G3 i7, but older (10th gen), thicker and heavier",
     "**X13 G3 i5 480** (Inrego, 5,799) and **X13 G3 i7 480** (Inrego, 7,599): Inet's X13 G3 i7 512 is cheaper than both",
     "**T14s G2 i5/i7** (Inet), **T14s G3 i7** (Inrego, 6,399), **X13 G4** (Inrego, 6,799): the X1 Carbon G10 is lighter, has a better 14\" screen, and costs less than or about the same as each",
@@ -141,6 +128,10 @@
     "**X13 G2** (~3,100) and **X13 G5 480** (7,199): sold out"
   ],
   "changes": [
+    {
+      "date": "2026-11-05",
+      "text": "Reuseit M2 Air (7,599 ex) and M1 Air Bra (5,599 ex) sold out. Cheapest Mac is now the Reuseit M1 Air, Okej grade, 5,199 ex. Best value Mac is now the TeknikFix M2 Air at 10,392 ex."
+    },
     {
       "date": "2026-11-04",
       "text": "Shortlist moved to laptops.json so a daily routine can update it."
