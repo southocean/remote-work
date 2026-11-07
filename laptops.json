@@ -140,7 +140,7 @@
         "where": "Stockholm (Vasastan), pickup",
         "price": 12000,
         "why": "**Best private deal.** Bought 4 Jan 2026, so Apple's warranty should run to about Jan 2027. 100% battery, no visible scratches, charger included. ~1,600 kr more than the shop M2 for a two-generation-newer chip.",
-        "flag": "Keyboard layout isn't stated, so ask"
+        "flag": "Keyboard layout isn't stated, so ask. Price is right at the Tradera sold median"
       },
       {
         "model": "MacBook Air 13\" M3",
@@ -150,7 +150,7 @@
         "where": "Malmö, needs shipping",
         "price": 11500,
         "why": "**Runner-up.** Swedish keyboard, 100% battery, original box, charger and MagSafe cable. Fixed price.",
-        "flag": "Small paint chip on one corner. Ship with Blocket buyer protection, not a plain Swish payment"
+        "flag": "Small paint chip on one corner. Above the ~10,650 sold median, and only 500 kr less than the M4"
       },
       {
         "model": "MacBook Air 13\" M1",
@@ -160,7 +160,7 @@
         "where": "Stockholm (Hagsätra), pickup or shipping",
         "price": 6800,
         "why": "**Budget pick.** 3,600 kr under the shop M2 and still plenty for writing and coding.",
-        "flag": "Battery 86% after 322 cycles, minimal dent on the front"
+        "flag": "Battery 86% after 322 cycles, minimal dent on the front. ~800 kr above what M1 16/512s sell for; offer ~6,000"
       },
       {
         "model": "MacBook Pro 14\" M1 Pro",
@@ -171,7 +171,7 @@
         "price": null,
         "price_label": "3,211 kr bid",
         "why": "**Watch.** The bigger, better screen for less than the Inrego M2 Pro, if bidding stays low. Heavier (~1.6 kg).",
-        "flag": "Ad not read yet; the bid will climb"
+        "flag": "Ad not read yet. Similar ones sold for 7,500–9,500, so expect it to end there"
       }
     ],
     "skipped": [
@@ -181,6 +181,77 @@
       "**Private X1 Carbon G9/G10** (5,990–6,900): no cheaper than Reuseit's G10 at 5,999 ex moms with a warranty",
       "**Several \"512 GB\" Airs**: turned out to be 8 GB or 256 GB in the description",
       "**M4 Air 16/256** (Tradera auction from 8,000): 256 GB and a UK keyboard"
-    ]
+    ],
+    "sold": {
+      "checked": "2026-11-07",
+      "note": "What MacBooks actually sold for on Tradera (its \"Sålda\" filter, ~250 listings). Use the median as a fair price and the middle half as the normal range. Most titles don't state storage, so the 512 GB rows are small samples, and the cards don't show whether every listing sold or just expired.",
+      "rows": [
+        {
+          "model": "Air 13\" M4 16/512",
+          "median": 12500,
+          "range": "11,000–12,500",
+          "n": 5
+        },
+        {
+          "model": "Air 13\" M4 16/256",
+          "median": 11000,
+          "range": "9,850–11,500",
+          "n": 25
+        },
+        {
+          "model": "Air 13\" M3 16/512",
+          "median": 10650,
+          "range": "10,000–11,300",
+          "n": 2
+        },
+        {
+          "model": "Air 13\" M3 (RAM not stated)",
+          "median": 8500,
+          "range": "8,200–9,250",
+          "n": 11
+        },
+        {
+          "model": "Air 13\" M2 16/512",
+          "median": 9000,
+          "range": "one sale",
+          "n": 1
+        },
+        {
+          "model": "Air 13\" M2 16 GB",
+          "median": 7250,
+          "range": "6,500–8,200",
+          "n": 10
+        },
+        {
+          "model": "Air 13\" M2 8 GB",
+          "median": 7100,
+          "range": "6,750–7,500",
+          "n": 6
+        },
+        {
+          "model": "Air 13\" M1 16 GB",
+          "median": 5000,
+          "range": "4,600–5,250",
+          "n": 14
+        },
+        {
+          "model": "Air 13\" M1 8 GB",
+          "median": 4150,
+          "range": "4,000–4,500",
+          "n": 14
+        },
+        {
+          "model": "Pro 14\" M1 Pro 16/512",
+          "median": 8600,
+          "range": "7,500–9,500",
+          "n": 10
+        }
+      ],
+      "takeaways": [
+        "**Each chip generation adds ~1,500–2,500 kr.** 16 GB over 8 GB adds ~1,000 kr, and 512 GB over 256 GB ~1,500 kr.",
+        "**M4s hold their value best**, so a used M4 saves less than you would expect.",
+        "**Auctions climb.** A low bid with days left says little; expect the final price near the median."
+      ]
+    }
   }
 }

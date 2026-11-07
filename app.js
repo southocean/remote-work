@@ -112,5 +112,12 @@ show(location.hash.slice(1), false);
     $('lt-priv').innerHTML = (pv.items || []).map(i =>
       `<tr><td>${link(i, i.model)}<span class="spec">${esc(i.spec)}</span></td><td>${i.price != null ? kr(i.price) : esc(i.price_label)}</td><td>${md(i.why)}${i.flag ? `<br><span class="flag">${esc(i.flag)}</span>` : ''}</td><td class="opt">${esc(i.site)} · ${esc(i.where)}</td></tr>`).join('');
     $('lt-priv-skip').innerHTML = (pv.skipped || []).map(x => `<li>${md(x)}</li>`).join('');
+    const so = pv.sold;
+    if (so) {
+      $('lt-sold-note').innerHTML = `Checked <b>${esc(so.checked)}</b>. ${md(so.note)}`;
+      $('lt-sold').innerHTML = (so.rows || []).map(r =>
+        `<tr><td>${esc(r.model)}</td><td><b>${kr(r.median)}</b></td><td>${esc(r.range)}</td><td class="opt">${esc(r.n)}</td></tr>`).join('');
+      $('lt-sold-take').innerHTML = (so.takeaways || []).map(x => `<li>${md(x)}</li>`).join('');
+    }
   }
 })();
