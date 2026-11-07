@@ -83,3 +83,4 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
 - Don't invent prices or stock. If unsure, leave the item as it is and say so in `status`.
 - Don't add anything that fails a hard requirement, however cheap it is.
 - Don't change the requirements or roles. Only the buyer changes those, by editing this file.
+- Don't touch `private`. It's a hand-checked list of Blocket/Tradera finds, kept separately because private sellers can't give a moms invoice. Keep it exactly as it is when you rewrite the file.

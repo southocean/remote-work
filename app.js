@@ -106,4 +106,11 @@ show(location.hash.slice(1), false);
   $('lt-notes').innerHTML = (d.notes || []).map(n => `<p class="muted small">${md(n)}</p>`).join('');
   $('lt-changes').innerHTML = (d.changes || []).slice(0, 30).map(c => `<li><b>${esc(c.date)}</b>: ${md(c.text)}</li>`).join('');
   $('lt-dropped').innerHTML = (d.dropped || []).map(x => `<li>${md(x)}</li>`).join('');
+  const pv = d.private;
+  if (pv) {
+    $('lt-priv-status').innerHTML = `Checked by hand <b>${esc(pv.checked)}</b>. ${md(pv.note)}`;
+    $('lt-priv').innerHTML = (pv.items || []).map(i =>
+      `<tr><td>${link(i, i.model)}<span class="spec">${esc(i.spec)}</span></td><td>${i.price != null ? kr(i.price) : esc(i.price_label)}</td><td>${md(i.why)}${i.flag ? `<br><span class="flag">${esc(i.flag)}</span>` : ''}</td><td class="opt">${esc(i.site)} · ${esc(i.where)}</td></tr>`).join('');
+    $('lt-priv-skip').innerHTML = (pv.skipped || []).map(x => `<li>${md(x)}</li>`).join('');
+  }
 })();
