@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-07",
-  "status": "Re-checked Reuseit, TeknikFix and Inrego: Reuseit's X1 Carbon G10 (i7-1255U) and M1 Air sold out and were replaced or dropped; other prices unchanged. Couldn't verify Inet (blocks automated loading), MacRent (no used MacBooks in stock) or the NetOnNet new reference, so those are kept as is.",
+  "checked": "2026-11-08",
+  "status": "Re-checked Reuseit, TeknikFix and Inrego: Reuseit's touch X1 Carbon G10 (Mycket bra) sold out and was replaced by the Bra-grade i7-1265U at 5,759 ex; other prices unchanged. Couldn't verify Inet (blocks automated loading), MacRent (no used MacBooks listed) or the NetOnNet new reference, so those are kept as is.",
   "items": [
     {
       "id": "x1c-g9-reuseit",
@@ -34,19 +34,19 @@
       "approx": false
     },
     {
-      "id": "x1c-g10-1265u-reuseit",
+      "id": "x1c-g10-1265u-bra-reuseit",
       "kind": "thinkpad",
       "model": "X1 Carbon G10",
       "spec": "i7-1265U · 16 GB · 512 GB · 14\" touch",
-      "url": "https://reuseit.se/sv/product/lenovo-thinkpad-x1-carbon-gen-10-12th-gen-intel-core-i7-1265u-16gb-512gb-touch-win-1",
+      "url": "https://reuseit.se/sv/product/lenovo-thinkpad-x1-carbon-gen-10-12th-gen-intel-core-i7-1265u-16gb-512gb-touch-win-2",
       "shop": "Reuseit",
-      "grade": "Mycket bra",
-      "price_ex": 5999,
-      "price_incl": 7499,
-      "why": "**Best ThinkPad.** 14\" touch, ~1.24 kg, U-series chip, premium build, Mycket bra condition, 2-year warranty",
+      "grade": "Bra",
+      "price_ex": 5759,
+      "price_incl": 7199,
+      "why": "**Best ThinkPad.** 14\" touch, ~1.24 kg, U-series chip, premium build, Bra condition, 2-year warranty",
       "highlight": true,
       "pick": "Best ThinkPad",
-      "pick_text": "The premium ThinkPad now: U-series i7-1265U, ~1.24 kg, best keyboard, Mycket bra. Same price as the sold-out non-touch G10, but the screen is touch.",
+      "pick_text": "The premium ThinkPad now: U-series i7-1265U, ~1.24 kg, best keyboard, Bra condition. The Mycket bra one sold out; this costs about 240 kr less.",
       "approx": true
     },
     {
@@ -94,6 +94,7 @@
     "Reuseit sells some items under the margin scheme (VMB) and marks them \"Denna produkt säljs enligt vinstmarginalbeskattning\". The listings above showed **no such note** and list prices as \"inkl. moms\". Ask Reuseit to confirm full moms on the invoice before ordering. TeknikFix itemises moms at checkout and shows ex-moms prices in business mode."
   ],
   "dropped": [
+    "**X1 Carbon G10 i7-1265U touch, Mycket bra** (Reuseit, 5,999): sold out (2026-11-08); the Bra-grade i7-1265U at 5,759 replaces it",
     "**X1 Carbon G10 i7-1255U, non-touch** (Reuseit, 5,999): sold out (2026-11-07); the i7-1265U touch G10 at the same price replaces it",
     "**MacBook Air 13\" M1 16/512, Okej** (Reuseit, 5,199): sold out (2026-11-07)",
     "**MacBook Air 13\" M2 16/512** (Reuseit, 7,599): sold out (2026-11-05)",
@@ -115,6 +116,10 @@
     "**X13 G2** (~3,100) and **X13 G5 480** (7,199): sold out"
   ],
   "changes": [
+    {
+      "date": "2026-11-08",
+      "text": "Reuseit X1 Carbon G10 i7-1265U touch, Mycket bra (5,999 ex) sold out. Best ThinkPad is now the Bra-grade G10 i7-1265U touch at 5,759 ex. Other prices unchanged."
+    },
     {
       "date": "2026-11-07",
       "text": "Reuseit X1 Carbon G10 i7-1255U (5,999 ex) and M1 Air Okej (5,199 ex) sold out. Best ThinkPad is now the Reuseit G10 i7-1265U touch, Mycket bra, 5,999 ex. Cheapest Mac and Best value Mac is now the TeknikFix M2 Air at 10,392 ex."
