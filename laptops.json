@@ -123,19 +123,9 @@
     }
   ],
   "private": {
-    "checked": "2026-11-07",
+    "checked": "2026-11-09",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
-      {
-        "model": "MacBook Air 13\" M4",
-        "spec": "16 GB · 512 GB · Midnight · 2025",
-        "url": "https://www.blocket.se/recommerce/forsale/item/18869686",
-        "site": "Blocket",
-        "where": "Stockholm (Vasastan), pickup",
-        "price": 12000,
-        "why": "**Best private deal.** Bought 4 Jan 2026, so Apple's warranty should run to about Jan 2027. 100% battery, no visible scratches, charger included. ~1,600 kr more than the shop M2 for a two-generation-newer chip.",
-        "flag": "Keyboard layout isn't stated, so ask. Price is right at the Tradera sold median"
-      },
       {
         "model": "MacBook Air 13\" M3",
         "spec": "16 GB · 512 GB · Midnight",
@@ -143,18 +133,8 @@
         "site": "Blocket",
         "where": "Malmö, needs shipping",
         "price": 11500,
-        "why": "**Runner-up.** Swedish keyboard, 100% battery, original box, charger and MagSafe cable. Fixed price.",
-        "flag": "Small paint chip on one corner. Above the ~10,650 sold median, and only 500 kr less than the M4"
-      },
-      {
-        "model": "MacBook Air 13\" M1",
-        "spec": "16 GB · 512 GB · 2020",
-        "url": "https://www.blocket.se/recommerce/forsale/item/20245035",
-        "site": "Blocket",
-        "where": "Stockholm (Hagsätra), pickup or shipping",
-        "price": 6800,
-        "why": "**Budget pick.** 3,600 kr under the shop M2 and still plenty for writing and coding.",
-        "flag": "Battery 86% after 322 cycles, minimal dent on the front. ~800 kr above what M1 16/512s sell for; offer ~6,000"
+        "why": "**Best private deal.** Swedish keyboard, 100% battery, original box, charger and MagSafe cable. Fixed price, and it can be bought with Blocket's \"Köp nu\" (shipping + buyer protection).",
+        "flag": "Small paint chip on one corner. ~850 kr above the ~10,650 sold median, so worth offering ~10,800"
       },
       {
         "model": "MacBook Pro 14\" M1 Pro",
@@ -169,6 +149,8 @@
       }
     ],
     "skipped": [
+      "**M4 Air 16/512** (Blocket, 12,000, Vasastan): sold (9 Nov)",
+      "**M1 Air 16/512** (Blocket, 6,800, Hagsätra): listing removed (9 Nov)",
       "**M5 Air 16 GB / 1 TB** (Blocket, 14,000): stain and glue residue on the screen, plus dents",
       "**M4 Air 16/512 with warranty** (Blocket, 13,990 and 14,200): about the same as a new M5 bought ex moms",
       "**M2 Air 16/512 on Tradera** (12,990): the shop TeknikFix selling at its normal price",
