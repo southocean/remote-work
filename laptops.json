@@ -1,22 +1,7 @@
 {
   "checked": "2026-11-09",
-  "status": "Re-checked Reuseit and TeknikFix (prices and stock unchanged) and Inrego (MBP 14 still in stock, price not re-read); no new qualifying deals. Couldn't verify Inet (blocks automated loading), MacRent or the NetOnNet new reference, so those are kept as is.",
+  "status": "Reuseit X1 Carbon G9 sold out and Inrego MBP 14 dropped 300 kr; Reuseit and TeknikFix otherwise unchanged with no better deals. Couldn't verify Inet (blocks automated loading), the NetOnNet new reference, or MacRent's listings (page didn't render), so those are kept as is.",
   "items": [
-    {
-      "id": "x1c-g9-reuseit",
-      "kind": "thinkpad",
-      "model": "X1 Carbon G9",
-      "spec": "i7-1165G7 · 16 GB · 512 GB · 14\"",
-      "url": "https://reuseit.se/sv/product/lenovo-thinkpad-x1-carbon-g9-i7-1165g7-16gb-512gb-black-fair",
-      "shop": "Reuseit",
-      "grade": "Okej",
-      "price_ex": 3839,
-      "price_incl": 4799,
-      "why": "**Cheapest overall.** 14\" 16:10, ~1.13 kg. But \"Okej skick\" (visible wear) and an older 11th-gen chip",
-      "highlight": false,
-      "pick": null,
-      "approx": true
-    },
     {
       "id": "x13-g3-inet",
       "kind": "thinkpad",
@@ -27,7 +12,7 @@
       "grade": "A",
       "price_ex": 4792,
       "price_incl": 5990,
-      "why": "**Best value.** Cheapest 12th-gen in top condition (A-grade)",
+      "why": "**Best value.** Cheapest 12th-gen in top condition (A-grade), and now the cheapest item overall",
       "highlight": true,
       "pick": "Best value",
       "pick_text": "Same chip as the X1 Carbon G10, A-grade, about 1,200 kr cheaper. Smaller 13.3\" screen and ~150 g heavier.",
@@ -73,12 +58,12 @@
       "url": "https://shop.inrego.se/barbara/apple-macbook-pro-14-2023-5",
       "shop": "Inrego",
       "grade": "Bra",
-      "price_ex": 12239,
-      "price_incl": 15299,
+      "price_ex": 11999,
+      "price_incl": 14999,
       "why": "**Best screen.** 120 Hz mini-LED, HDMI and SD slot, faster under sustained load. Heavier (~1.6 kg)",
       "highlight": true,
       "pick": null,
-      "approx": false
+      "approx": true
     }
   ],
   "new_reference": {
@@ -94,6 +79,7 @@
     "Reuseit sells some items under the margin scheme (VMB) and marks them \"Denna produkt säljs enligt vinstmarginalbeskattning\". The listings above showed **no such note** and list prices as \"inkl. moms\". Ask Reuseit to confirm full moms on the invoice before ordering. TeknikFix itemises moms at checkout and shows ex-moms prices in business mode."
   ],
   "dropped": [
+    "**X1 Carbon G9 i7-1165G7, Okej** (Reuseit, 3,839): sold out (2026-11-09)",
     "**X1 Carbon G10 i7-1265U touch, Mycket bra** (Reuseit, 5,999): sold out (2026-11-08); the Bra-grade i7-1265U at 5,759 replaces it",
     "**X1 Carbon G10 i7-1255U, non-touch** (Reuseit, 5,999): sold out (2026-11-07); the i7-1265U touch G10 at the same price replaces it",
     "**MacBook Air 13\" M1 16/512, Okej** (Reuseit, 5,199): sold out (2026-11-07)",
@@ -112,10 +98,13 @@
     "**MacBook Pro 16\"** M2 Pro / M2 Max: too big and heavy to travel with (2.1 kg)",
     "**MacRent** used Macs: M1 Air with only 256 GB, MBP 13\" with 8 GB RAM, and Pros from 16,800. Nothing beats the list",
     "**Used M4 Air**: none with 512 GB at a seller that invoices with moms. Refurbished M4s cost more than a new M5",
-    "**Anything with 240/256 GB**: too small for Windows plus dev tools",
-    "**X13 G2** (~3,100) and **X13 G5 480** (7,199): sold out"
+    "**Anything with 240/256 GB**: too small for Windows plus dev tools"
   ],
   "changes": [
+    {
+      "date": "2026-11-09",
+      "text": "Reuseit X1 Carbon G9 Okej (3,839 ex) sold out; the Inet X13 G3 (4,792 ex, not re-verified) is now the cheapest item. Inrego MBP 14 M2 Pro fell from 12,239 to 11,999 ex. Picks unchanged."
+    },
     {
       "date": "2026-11-08",
       "text": "Reuseit X1 Carbon G10 i7-1265U touch, Mycket bra (5,999 ex) sold out. Best ThinkPad is now the Bra-grade G10 i7-1265U touch at 5,759 ex. Other prices unchanged."
