@@ -66,6 +66,22 @@
       "pick_text": "The only M2 Air that fits: A-grade, battery guaranteed above 80%, 12-month warranty. Fanless, ~1.24 kg, Swedish keyboard."
     },
     {
+      "id": "mba-m5-refurbed-de",
+      "kind": "mac",
+      "model": "MacBook Air 13\" M5",
+      "spec": "M5 · 16 GB · 512 GB · 2026 · Sky Blue",
+      "url": "https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/",
+      "shop": "refurbed (Janado, DE)",
+      "grade": "Nyskick",
+      "price_ex": 11639,
+      "price_incl": 14549,
+      "approx": true,
+      "why": "**German keyboard (QWERTZ).** Cheapest M5 by ~1,230 kr. Set macOS to the Swedish layout and every key works, but Y/Z and symbol labels are printed wrong. Nyskick, 12-month warranty, \"optimal\" battery. Bought from a German seller with your momsreg nr, so the company accounts for the moms itself (EU reverse charge)",
+      "highlight": true,
+      "pick": "Best long-term Mac",
+      "pick_text": "A like-new M5 Air for ~11,640 ex moms, if you can live with German key labels; the Swedish-keyboard one is ~1,320 kr more."
+    },
+    {
       "id": "mbp14-m2pro-inrego",
       "kind": "mac",
       "model": "MacBook Pro 14\"",
@@ -91,10 +107,25 @@
       "price_ex": 12872,
       "price_incl": 16090,
       "approx": true,
-      "why": "**Best long-term Mac.** Newest chip, effectively new battery and the longest macOS support, 720 kr under new. A returned item: uncollected, cooling-off return, or repaired unit. Ask which, and confirm Swedish keyboard and warranty start date",
-      "highlight": true,
-      "pick": "Best long-term Mac",
+      "why": "**Backup M5 Air, Swedish shop.** Returned item, 720 kr under new. Ask why it was returned (uncollected, cooling-off return or repaired unit), and confirm Swedish keyboard and warranty start date",
+      "highlight": false,
+      "pick": null,
       "pick_text": "A returned M5 Air at ~12,900 ex moms: newest chip and longest support for about the price of a used M4. Few left; NetOnNet's Black Week starts 12 Nov."
+    },
+    {
+      "id": "mba-m5-refurbed-se",
+      "kind": "mac",
+      "model": "MacBook Air 13\" M5",
+      "spec": "M5 · 16 GB · 512 GB · 2026 · Swedish keyboard",
+      "url": "https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/",
+      "shop": "refurbed (pick \"Svensk\" layout)",
+      "grade": "Nyskick",
+      "price_ex": 12959,
+      "price_incl": 16199,
+      "approx": true,
+      "why": "**Swedish-keyboard version.** Same listing with \"Svensk (QWERTY)\" chosen, +1,650 kr incl. Almost exactly the NetOnNet Fyndvara price, but graded Nyskick with a 12-month warranty",
+      "highlight": false,
+      "pick": null
     }
   ],
   "new_reference": {
@@ -132,6 +163,10 @@
     "**Used M4 Air**: none with 512 GB at a seller that invoices with moms. Refurbished M4s cost more than a new M5"
   ],
   "changes": [
+    {
+      "date": "2026-11-10",
+      "text": "Added two refurbed M5 Airs (Nyskick, 12-month warranty): German keyboard ~11,639 ex, Swedish keyboard ~12,959 ex. The German one is now **Best long-term Mac**; the NetOnNet Fyndvara stays as a backup. The list now keeps every good option, not one per role."
+    },
     {
       "date": "2026-11-10",
       "text": "Added a NetOnNet Fyndvara (returned) M5 Air 16/512 at ~12,872 ex moms (16,090 incl) as **Best long-term Mac**. It's only 720 kr under new, and Black Week starts 12 Nov."

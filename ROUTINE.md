@@ -14,10 +14,10 @@ Instructions for the cloud routine that runs every morning. It keeps the Laptop 
 ## Hard requirements (otherwise exclude)
 
 1. **16 GB RAM or more** and **480 GB storage or more**.
-2. **Swedish/Nordic keyboard.** If the listing doesn't say, it's fine to assume Swedish for Swedish shops, but exclude anything marked US, UK, DE, DK etc.
+2. **Swedish/Nordic keyboard preferred.** If the listing doesn't say, assume Swedish for Swedish shops. Another ISO layout (DE, DK, NO, FI) is allowed only if it's at least 1,000 kr ex moms cheaper than the same machine with a Swedish keyboard. Start its `why` with "**German keyboard (QWERTZ).**" (or whichever layout it is). Exclude US/UK layouts.
 3. **The company can buy it with full moms on the invoice.**
    - Exclude anything sold under the margin scheme (VMB / "vinstmarginalbeskattning"). Reuseit marks those listings with "Denna produkt säljs enligt vinstmarginalbeskattning". Look for that text in the *visible product text*, not in the JS bundles.
-   - Exclude marketplaces where the seller is unknown (OnBuy, Amazon, CDON, Fyndiq, Blocket, Tradera, Back Market).
+   - Exclude marketplaces where the seller is unknown (OnBuy, Amazon, CDON, Fyndiq, Blocket, Tradera, Back Market). **refurbed.se is allowed.** Its checkout has a Företag option asking for a momsreg nr and shows the "Netto" price. Record the named seller (e.g. Janado) and the country it ships from in `shop`, e.g. "refurbed (Janado, DE)".
 4. **In stock or orderable.** "Slut i lager" means it's gone.
 5. **Light enough to travel:** 13–14" only. No 15–16", no workstations (P-series), no L-series.
 
@@ -40,6 +40,7 @@ Prefer Intel **U-series** chips (e.g. i7-1255U) over **P-series** (i7-1260P/1270
 | TeknikFix | https://teknikfix.se/produkt-kategori/macbook/ and https://teknikfix.se/produkt-kategori/begagnade-datorer/begagnade-laptops/ | incl. by default → ÷ 1.25 (ex-moms in business mode) | Grades A+ > A > B. 12-month warranty, battery ≥80% guaranteed |
 | Inet (refurbished) | https://www.inet.se/hitta?q=refurbished%20thinkpad | incl. → ÷ 1.25 | "A Grade" = battery >70% |
 | MacRent | https://www.macrent.se/begagnat/begagnad-macbook/ | ex moms shown | Business-only seller; shows battery % |
+| refurbed | https://www.refurbed.se/c/macbook-air/ and product pages like https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/ | incl. → ÷ 1.25 (= the "Netto" price at checkout) | Grades: Nyskick > Mycket bra > Bra. 12-month warranty, 30-day returns. Check the keyboard layout dropdown: other layouts cost more |
 | NetOnNet Fyndvaror | https://www.netonnet.se/art/fyndvaror/dator-surfplatta/ (search "macbook air") | incl. → ÷ 1.25 | Returned items: uncollected, cooling-off returns, or repaired units. Note which on the page if stated |
 | Blocket / Tradera (private, refresh only) | the item URLs in `private.items` | — | See step 6 |
 | New M5 Air reference | NetOnNet, Inet, Elgiganten, Komplett, MacRent (all have company purchase) | incl. → ÷ 1.25 | Only for `new_reference`. Not Amazon, not OnBuy, not Proshop (business purchase unconfirmed) |
@@ -55,19 +56,22 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - Sold out or page gone → remove it, and add "**Model** (shop, price): sold out (YYYY-MM-DD)" to `dropped`.
    - Condition grade or VMB status changed → update it, or drop it if it no longer meets the requirements.
 2. **Scan the sources** for candidates that meet the hard requirements.
-3. **Decide what earns a place.** Each item must be the best at least one of these **roles**:
-   - Cheapest overall
-   - Best value ThinkPad: cheapest 12th-gen-or-newer in top condition
-   - Best ThinkPad: premium 14", light, good condition (currently X1 Carbon G10, U-series, Mycket bra)
-   - Cheapest Mac
-   - Best value Mac: M2 or newer Air, good condition, cheapest
-   - Safest used Air: warranty or battery guarantee
-   - Best screen Mac: 14" Pro
-   - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**. Always add these, with `"pick": "Deal alert"`.
-   - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ sold as a returned/open-box item (NetOnNet "Fyndvara", Elgiganten Outlet) by a shop that sells to companies, priced below the new price. Battery is effectively new and the chip gets the longest macOS support. Remove it when sold or when the new price drops below it.
-
-   If a candidate does a role better (cheaper with equal-or-better specs and condition, or same price with clearly better specs or condition), it replaces the current holder. Move the old one to `dropped` with a one-line reason. If an item no longer wins any role, drop it.
-4. **Picks:** exactly three items get `pick`: "Best ThinkPad", "Best value" (cheapest top-condition 12th-gen+ ThinkPad) and "Best value Mac", each with a one-sentence `pick_text`. Add "Best long-term Mac" (if one qualifies) and any "Deal alert" picks on top of those.
+3. **Decide what goes on the list.** The buyer wants **every good option** listed, not just one winner per role, because good units sell within days and it helps to have backups. So:
+   - Keep every candidate that meets the hard requirements and is **within ~15% of the cheapest comparable option** (same family and generation, similar condition), or that is clearly the best at something: price, condition, warranty, battery, weight or screen.
+   - Drop an item only if it's sold out, fails a requirement, or another listing is **better in every way** (cheaper *and* equal-or-better specs, condition and warranty). Move it to `dropped` with a one-line reason.
+   - Keep the list readable: at most ~20 items. If it's longer, drop the least competitive first.
+   - Roles, used for `why` and picks:
+     - Cheapest overall
+     - Best value ThinkPad: cheapest 12th-gen-or-newer in top condition
+     - Best ThinkPad: premium 14", light, good condition
+     - Cheapest Mac
+     - Best value Mac: M2 or newer Air, good condition, cheapest
+     - Safest used Air: warranty or battery guarantee
+     - Best screen Mac: 14" Pro
+     - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ that is refurbished, returned or open-box (refurbed "Nyskick", NetOnNet "Fyndvara", Elgiganten Outlet) at a company-buyable seller, priced below new.
+     - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**.
+   - Items that aren't the best at a role still get a `why`. Start it with a short bold label such as "**Backup M5 Air.**" or "**Swedish-keyboard version.**".
+4. **Picks:** give `pick` to the holder of each role above that has one. There's no limit on how many picks there are, but each role has only one holder. Each pick gets a one-sentence `pick_text`.
 5. **`new_reference`:** the cheapest new MacBook Air 13" M5 with 16 GB / 512 GB at a shop that sells to companies. Update its price and shop.
 6. **Refresh `private`** (the hand-picked Blocket/Tradera listings). Open each item's `url` with `curl -sL -A "Mozilla/5.0"`:
    - **Blocket:** if the page returns 404 or "Sidan hittades inte", or the raw HTML contains the word `Såld`, the item is gone. Remove it and add "**Model** (Blocket, price, area): sold (D Mon)" (or "listing removed") to the front of `private.skipped`. Otherwise update `price` if the listed price changed.
