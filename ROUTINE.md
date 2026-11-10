@@ -67,7 +67,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ sold as a returned/open-box item (NetOnNet "Fyndvara", Elgiganten Outlet) by a shop that sells to companies, priced below the new price. Battery is effectively new and the chip gets the longest macOS support. Remove it when sold or when the new price drops below it.
 
    If a candidate does a role better (cheaper with equal-or-better specs and condition, or same price with clearly better specs or condition), it replaces the current holder. Move the old one to `dropped` with a one-line reason. If an item no longer wins any role, drop it.
-4. **Picks:** exactly three items get `pick`: "Best ThinkPad", "Best value" (cheapest top-condition 12th-gen+ ThinkPad) and "Best value Mac", each with a one-sentence `pick_text`. Add any "Deal alert" picks on top of those.
+4. **Picks:** exactly three items get `pick`: "Best ThinkPad", "Best value" (cheapest top-condition 12th-gen+ ThinkPad) and "Best value Mac", each with a one-sentence `pick_text`. Add "Best long-term Mac" (if one qualifies) and any "Deal alert" picks on top of those.
 5. **`new_reference`:** the cheapest new MacBook Air 13" M5 with 16 GB / 512 GB at a shop that sells to companies. Update its price and shop.
 6. **Refresh `private`** (the hand-picked Blocket/Tradera listings). Open each item's `url` with `curl -sL -A "Mozilla/5.0"`:
    - **Blocket:** if the page returns 404 or "Sidan hittades inte", or the raw HTML contains the word `Såld`, the item is gone. Remove it and add "**Model** (Blocket, price, area): sold (D Mon)" (or "listing removed") to the front of `private.skipped`. Otherwise update `price` if the listed price changed.
