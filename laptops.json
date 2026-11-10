@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-10",
-  "status": "Reuseit, TeknikFix, Inrego and MacRent checked. TeknikFix's Midnight M2 Air sold out; the identical Space Gray one at the same price replaces it, and a MacRent M1 Air 16/512 is the new cheapest Mac. Couldn't verify Inet (blocks automated loading) or the NetOnNet new reference, so those are kept as is.",
+  "status": "Re-checked Reuseit, TeknikFix, Inrego and MacRent item pages and the Blocket/Tradera listings: all still in stock, no price changes (Tradera bid still 6,354 kr). Couldn't verify Inet (blocks automated loading) or the NetOnNet new reference, so those are kept as is; shop category pages gave no new candidates.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -248,5 +248,6 @@
         "**Auctions climb.** A low bid with days left says little; expect the final price near the median."
       ]
     }
-  }
+  },
+  "checked_at": "11:40"
 }
