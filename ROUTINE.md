@@ -43,7 +43,7 @@ Prefer Intel **U-series** chips (e.g. i7-1255U) over **P-series** (i7-1260P/1270
 | refurbed | https://www.refurbed.se/c/macbook-air/ and product pages like https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/ | incl. → ÷ 1.25 (= the "Netto" price at checkout) | Grades: Nyskick > Mycket bra > Bra. 12-month warranty, 30-day returns. Check the keyboard layout dropdown: other layouts cost more |
 | NetOnNet Fyndvaror | https://www.netonnet.se/art/fyndvaror/dator-surfplatta/ (search "macbook air") | incl. → ÷ 1.25 | Returned items: uncollected, cooling-off returns, or repaired units. Note which on the page if stated |
 | Blocket / Tradera (private, refresh only) | the item URLs in `private.items` | — | See step 6 |
-| New M5 Air reference | NetOnNet, Inet, Elgiganten, Komplett, MacRent (all have company purchase) | incl. → ÷ 1.25 | Only for `new_reference`. Not Amazon, not OnBuy, not Proshop (business purchase unconfirmed) |
+| New M5 Air reference + Black Week alert | **PriceRunner** pages (see step 5), because the shops themselves block automated fetches (NetOnNet 403, Elgiganten 429) | incl. → ÷ 1.25 | Only shops with company purchase count: NetOnNet, Inet, Elgiganten, Komplett, MacRent. Not Amazon, CDON, e-ville, OnBuy or Proshop |
 
 Use `curl -sL -A "Mozilla/5.0"` or WebFetch. Some pages render with JS, so if a page comes back empty, try a product or search URL instead. **If you can't load a shop, don't remove its items.** Keep them and say "couldn't verify <shop>" in `status`.
 
@@ -72,7 +72,21 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**.
    - Items that aren't the best at a role still get a `why`. Start it with a short bold label such as "**Backup M5 Air.**" or "**Swedish-keyboard version.**".
 4. **Picks:** give `pick` to the holder of each role above that has one. There's no limit on how many picks there are, but each role has only one holder. Each pick gets a one-sentence `pick_text`.
-5. **`new_reference`:** the cheapest new MacBook Air 13" M5 with 16 GB / 512 GB at a shop that sells to companies. Update its price and shop.
+5. **New M5 Air price + Black Week alert.** Fetch these four PriceRunner pages (13" M5, 16 GB / 512 GB, one per colour) with `curl -sL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"`:
+   - Midnight: https://www.pricerunner.se/pl/27-3457446953/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Midnight-priser
+   - Sky Blue: https://www.pricerunner.se/pl/27-3457446949/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Sky-Blue-priser
+   - Silver: https://www.pricerunner.se/pl/27-3457446908/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Silver-priser
+   - Starlight: https://www.pricerunner.se/pl/27-3457446952/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Starlight-priser
+
+   Each shop's price is in the raw HTML as `"type":"merchantFilterOption","id":"…","name":"<Shop>","count":N,"lowestPrice":{"amount":"<price incl. moms>"`. Extract it with this regex: `"type":"merchantFilterOption","id":"\d+","name":"([^"]+)","count":\d+,"lowestPrice":\{"amount":"([\d.]+)"`. Keep only **NetOnNet, Inet, Elgiganten, Komplett, MacRent**, and take the cheapest across all four colours.
+   - **`new_reference`:** set it to that cheapest company-buyable price (shop, colour, incl. and ÷ 1.25 ex), with the PriceRunner page as `url`.
+   - **Black Week alert (runs until 2026-12-01):** if that price is **≤ 15,500 kr incl. (≈ 12,400 ex)**, add or refresh an item with `id` `"mba-m5-new-alert"`:
+     - `kind` "mac", `shop` "<Shop> (new, <colour>)", `grade` "New", `approx` true.
+     - `pick` "Black Week alert", `highlight` true.
+     - `why`: "**Black Week alert.** New M5 Air 16/512 with Swedish keyboard, full warranty, for ~X ex moms at <Shop>." If it's ≤ 14,550 incl, add "It beats every refurbished M5 on the list."
+     - Send a **PushNotification**: "Black Week: new M5 Air 16/512 at <Shop> for <incl> kr (~<ex> ex moms). Buy via Företag mode."
+   - If the price rises back above 15,500 incl, or after 2026-12-01, remove the alert item and note it in `changes`.
+   - If PriceRunner can't be loaded, keep `new_reference` and the alert as they are, and say so in `status`.
 6. **Refresh `private`** (the hand-picked Blocket/Tradera listings). Open each item's `url` with `curl -sL -A "Mozilla/5.0"`:
    - **Blocket:** if the page returns 404 or "Sidan hittades inte", or the raw HTML contains the word `Såld`, the item is gone. Remove it and add "**Model** (Blocket, price, area): sold (D Mon)" (or "listing removed") to the front of `private.skipped`. Otherwise update `price` if the listed price changed.
    - **Tradera:** read the current bid (the number after "Ledande bud") and the end time ("Slutar …"). Update `price_label` to "X kr bid (Y with buyer protection)", using both numbers from the page. Once an auction has ended, remove the item and add "**Model** (Tradera): ended at X kr (D Mon)" to the front of `private.skipped`.
