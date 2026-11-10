@@ -79,6 +79,22 @@
       "highlight": true,
       "pick": null,
       "approx": true
+    },
+    {
+      "id": "mba-m5-netonnet-fynd",
+      "kind": "mac",
+      "model": "MacBook Air 13\" M5",
+      "spec": "M5 · 16 GB · 512 GB · 2026 · Midnight",
+      "url": "https://www.netonnet.se/art/fyndvaror/dator-surfplatta/apple-x-13-inch-macbook-air-apple-m5-chip-with-10core-cpu-and-8core-gpu-16gb-512gb-ssd-midnight/x1064530.4802/",
+      "shop": "NetOnNet (Fyndvara)",
+      "grade": "Returned item",
+      "price_ex": 12872,
+      "price_incl": 16090,
+      "approx": true,
+      "why": "**Best long-term Mac.** Newest chip, effectively new battery and the longest macOS support, 720 kr under new. A returned item: uncollected, cooling-off return, or repaired unit. Ask which, and confirm Swedish keyboard and warranty start date",
+      "highlight": true,
+      "pick": "Best long-term Mac",
+      "pick_text": "A returned M5 Air at ~12,900 ex moms: newest chip and longest support for about the price of a used M4. Few left; NetOnNet's Black Week starts 12 Nov."
     }
   ],
   "new_reference": {
@@ -116,6 +132,10 @@
     "**Used M4 Air**: none with 512 GB at a seller that invoices with moms. Refurbished M4s cost more than a new M5"
   ],
   "changes": [
+    {
+      "date": "2026-11-10",
+      "text": "Added a NetOnNet Fyndvara (returned) M5 Air 16/512 at ~12,872 ex moms (16,090 incl) as **Best long-term Mac**. It's only 720 kr under new, and Black Week starts 12 Nov."
+    },
     {
       "date": "2026-11-10",
       "text": "TeknikFix M2 Air Midnight sold out; the Space Gray one (10,392 ex, A-grade) takes its place. Added MacRent M1 Air 16/512 (5,580 ex, 85% battery) as the cheapest Mac. Picks unchanged."

@@ -40,6 +40,7 @@ Prefer Intel **U-series** chips (e.g. i7-1255U) over **P-series** (i7-1260P/1270
 | TeknikFix | https://teknikfix.se/produkt-kategori/macbook/ and https://teknikfix.se/produkt-kategori/begagnade-datorer/begagnade-laptops/ | incl. by default → ÷ 1.25 (ex-moms in business mode) | Grades A+ > A > B. 12-month warranty, battery ≥80% guaranteed |
 | Inet (refurbished) | https://www.inet.se/hitta?q=refurbished%20thinkpad | incl. → ÷ 1.25 | "A Grade" = battery >70% |
 | MacRent | https://www.macrent.se/begagnat/begagnad-macbook/ | ex moms shown | Business-only seller; shows battery % |
+| NetOnNet Fyndvaror | https://www.netonnet.se/art/fyndvaror/dator-surfplatta/ (search "macbook air") | incl. → ÷ 1.25 | Returned items: uncollected, cooling-off returns, or repaired units. Note which on the page if stated |
 | Blocket / Tradera (private, refresh only) | the item URLs in `private.items` | — | See step 6 |
 | New M5 Air reference | NetOnNet, Inet, Elgiganten, Komplett, MacRent (all have company purchase) | incl. → ÷ 1.25 | Only for `new_reference`. Not Amazon, not OnBuy, not Proshop (business purchase unconfirmed) |
 
@@ -63,6 +64,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - Safest used Air: warranty or battery guarantee
    - Best screen Mac: 14" Pro
    - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**. Always add these, with `"pick": "Deal alert"`.
+   - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ sold as a returned/open-box item (NetOnNet "Fyndvara", Elgiganten Outlet) by a shop that sells to companies, priced below the new price. Battery is effectively new and the chip gets the longest macOS support. Remove it when sold or when the new price drops below it.
 
    If a candidate does a role better (cheaper with equal-or-better specs and condition, or same price with clearly better specs or condition), it replaces the current holder. Move the old one to `dropped` with a one-line reason. If an item no longer wins any role, drop it.
 4. **Picks:** exactly three items get `pick`: "Best ThinkPad", "Best value" (cheapest top-condition 12th-gen+ ThinkPad) and "Best value Mac", each with a one-sentence `pick_text`. Add any "Deal alert" picks on top of those.
