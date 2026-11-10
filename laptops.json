@@ -35,6 +35,66 @@
       "approx": true
     },
     {
+      "id": "x1c-g10-1255u-refurbed",
+      "kind": "thinkpad",
+      "model": "X1 Carbon G10",
+      "spec": "i7-1255U · 16 GB · 512 GB · 14\" · Swedish",
+      "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i7-1255u/",
+      "shop": "refurbed",
+      "grade": "Bra",
+      "price_ex": 6631,
+      "price_incl": 8289,
+      "approx": true,
+      "why": "**Backup Best ThinkPad.** Same G10 as Reuseit's with the cooler U-series i7, Swedish keyboard, 12-month warranty. ~870 kr more than Reuseit's",
+      "highlight": false,
+      "pick": null
+    },
+    {
+      "id": "x13-g3-1265u-refurbed",
+      "kind": "thinkpad",
+      "model": "X13 G3",
+      "spec": "i7-1265U · 16 GB · 512 GB · 13.3\" · Swedish",
+      "url": "https://www.refurbed.se/p/lenovo-x13-g3-i7-1265u/",
+      "shop": "refurbed",
+      "grade": "Bra",
+      "price_ex": 6716,
+      "price_incl": 8395,
+      "approx": true,
+      "why": "**Backup X13 G3.** Swedish keyboard, fingerprint reader, 12-month warranty. Pricier than Inet's, but Inet's listing can't be re-checked automatically",
+      "highlight": false,
+      "pick": null
+    },
+    {
+      "id": "x1c-g10-1245u-refurbed",
+      "kind": "thinkpad",
+      "model": "X1 Carbon G10",
+      "spec": "i5-1245U · 16 GB · 512 GB · 14\" · Swedish",
+      "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i5-1245u/",
+      "shop": "refurbed",
+      "grade": "Mycket bra",
+      "price_ex": 6775,
+      "price_incl": 8469,
+      "approx": true,
+      "why": "**Better-condition G10.** \"Mycket bra\" grade with an i5, plenty for writing and coding. Pick 512 GB on the page (+1,844 kr incl. over the 256 GB base)",
+      "highlight": false,
+      "pick": null
+    },
+    {
+      "id": "x1c-g11-1355u-refurbed",
+      "kind": "thinkpad",
+      "model": "X1 Carbon G11",
+      "spec": "i7-1355U · 16 GB · 512 GB · 14\" · Nordic",
+      "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g11-i7-1355u/",
+      "shop": "refurbed",
+      "grade": "Bra",
+      "price_ex": 8471,
+      "price_incl": 10589,
+      "approx": true,
+      "why": "**Newest X1 Carbon.** 13th-gen U-series, Nordic keyboard (has å/ä/ö), 12-month warranty. Costs about the same as a used Mac, so only worth it if you want Windows",
+      "highlight": false,
+      "pick": null
+    },
+    {
       "id": "mba-m1-512-macrent",
       "kind": "mac",
       "model": "MacBook Air 13\"",
@@ -141,6 +201,10 @@
     "Reuseit sells some items under the margin scheme (VMB) and marks them \"Denna produkt säljs enligt vinstmarginalbeskattning\". The listings above showed **no such note** and list prices as \"inkl. moms\". Ask Reuseit to confirm full moms on the invoice before ordering. TeknikFix itemises moms at checkout and shows ex-moms prices in business mode."
   ],
   "dropped": [
+    "**refurbed T14s G4 i7-1355U 16/512 Nordic** (~9,076 ex): pricier than the X1 Carbon G11, which is lighter and newer",
+    "**refurbed X13 G4 i7-1365U**: only 32 GB/256 GB, or 512 GB with a German keyboard, at ~8,780 ex",
+    "**refurbed X1 Carbon G9 i7-1165G7 16/512 Swedish** (~7,335 ex): older than the G10s, and costs more",
+    "**refurbed X13 G3 i5-1245U / T14s G3 Ryzen**: 256 GB only, or no Swedish/Nordic keyboard",
     "**MacBook Air 13\" M2 16/512, Midnight** (TeknikFix, 10,392): sold out (2026-11-10); the identical Space Gray one at the same price replaces it",
     "**X1 Carbon G9 i7-1165G7, Okej** (Reuseit, 3,839): sold out (2026-11-09)",
     "**X1 Carbon G10 i7-1265U touch, Mycket bra** (Reuseit, 5,999): sold out (2026-11-08); the Bra-grade i7-1265U at 5,759 replaces it",
@@ -163,6 +227,10 @@
     "**Used M4 Air**: none with 512 GB at a seller that invoices with moms. Refurbished M4s cost more than a new M5"
   ],
   "changes": [
+    {
+      "date": "2026-11-10",
+      "text": "Added four refurbed ThinkPads with 16 GB, 512 GB and a Swedish or Nordic keyboard, as backups: X1 Carbon G10 i7 (~6,631 ex), X1 Carbon G10 i5 Mycket bra (~6,775), X13 G3 i7 (~6,716) and X1 Carbon G11 (~8,471)."
+    },
     {
       "date": "2026-11-10",
       "text": "Added two refurbed M5 Airs (Nyskick, 12-month warranty): German keyboard ~11,639 ex, Swedish keyboard ~12,959 ex. The German one is now **Best long-term Mac**; the NetOnNet Fyndvara stays as a backup. The list now keeps every good option, not one per role."
