@@ -75,6 +75,8 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - **Don't add new private listings, and don't rewrite `why`, `note` or `sold`.** Those stay hand-picked.
 7. **Bookkeeping:**
    - `checked` = today's date in Europe/Stockholm (YYYY-MM-DD).
+   - `checked_at` = the time you finished, in Europe/Stockholm (HH:MM). **Update it on every run, even when nothing else changed**, so the page shows the routine is alive.
+   - `status` must describe *this* run, even if it's "No changes since yesterday". Mention that Blocket/Tradera were re-checked.
    - `status` = one short sentence about today, e.g. "Checked all 5 shops, no changes." or "Reuseit M2 Air dropped 400 kr; couldn't verify Inet."
    - Add one entry to the front of `changes` (`{date, text}`) **only if something changed**. Keep the 30 newest.
    - Keep `dropped` to the 20 most useful entries, newest reasons first.
@@ -82,7 +84,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
 8. **Style:** plain English, short. Each `why` starts with its role in bold (`**Best value Mac.** …`). Only `**bold**` markup is allowed; no HTML.
 9. **Validate and publish:**
    - `python3 -m json.tool laptops.json > /dev/null` must pass.
-   - If anything changed (including `checked`), commit to `main` with the message `Daily laptop check YYYY-MM-DD` and push. If the push is rejected, `git pull --rebase` and push again.
+   - Always commit (at least `checked_at` changes) to `main` with the message `Daily laptop check YYYY-MM-DD` and push. If the push is rejected, `git pull --rebase` and push again.
    - Don't edit any other file.
 
 ## Don't

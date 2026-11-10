@@ -95,7 +95,7 @@ show(location.hash.slice(1), false);
   let d;
   try { d = await (await fetch('laptops.json', { cache: 'no-cache' })).json(); }
   catch { $('lt-status').textContent = 'Could not load the shortlist (laptops.json).'; return; }
-  $('lt-status').innerHTML = `Last checked <b>${esc(d.checked)}</b>. ${md(d.status)}`;
+  $('lt-status').innerHTML = `Last checked <b>${esc(d.checked)}${d.checked_at ? ' ' + esc(d.checked_at) : ''}</b>. ${md(d.status)}`;
   const items = d.items || [];
   $('lt-picks').innerHTML = items.filter(i => i.pick).map(i =>
     `<div class="card accent"><b>${esc(i.pick)}</b><p>${link(i, i.model)}, ${esc(i.spec)}, ${esc(i.grade)}<br><span class="price">${i.approx ? '~' : ''}${kr(i.price_ex)} kr</span> <span class="muted small">· ${esc(i.shop)}${i.price_incl ? ` (${kr(i.price_incl)} incl.)` : ''}</span><br>${md(i.pick_text)}</p></div>`).join('');
