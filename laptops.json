@@ -142,7 +142,7 @@
     }
   ],
   "private": {
-    "checked": "2026-11-09",
+    "checked": "2026-11-10",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
       {
@@ -160,11 +160,11 @@
         "spec": "16 GB · 512 GB · 2021",
         "url": "https://www.tradera.com/item/302393/759338440/macbook-pro-14-tum-2021-apple-m1-pro-16gb-ram-512gb-ssd",
         "site": "Tradera",
-        "where": "Auction, ends 17 Nov",
+        "where": "Auction, ends 17 Nov 17:38",
         "price": null,
-        "price_label": "3,211 kr bid",
-        "why": "**Watch.** The bigger, better screen for less than the Inrego M2 Pro, if bidding stays low. Heavier (~1.6 kg).",
-        "flag": "Ad not read yet. Similar ones sold for 7,500–9,500, so expect it to end there"
+        "price_label": "6,354 kr bid (6,674 with buyer protection)",
+        "why": "**Watch.** The bigger, better 120 Hz screen. **Bid ceiling ~6,650 kr** (~7,000 with buyer protection): similar ones sell for 7,500–9,500, but this one comes without a charger and has cosmetic wear.",
+        "flag": "\"Okej\" condition: sticker marks on the lid, one bottom screw missing. **Computer only, no charger** (~600–900 kr extra). Battery health and keyboard layout not stated, so ask before bidding. Heavier (~1.6 kg)"
       }
     ],
     "skipped": [
