@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-10",
-  "status": "Re-checked Reuseit, TeknikFix, Inrego and MacRent item pages and the Blocket/Tradera listings: all still in stock, no price changes (Tradera bid still 6,354 kr). Couldn't verify Inet (blocks automated loading) or the NetOnNet new reference, so those are kept as is; shop category pages gave no new candidates.",
+  "checked": "2026-11-11",
+  "status": "Re-checked Reuseit, TeknikFix, Inrego, MacRent, Blocket and Tradera: all still listed, no price changes (Tradera bid still 6,354 kr). Couldn't verify Inet, refurbed, NetOnNet or the PriceRunner new reference (blocked/unreachable), so those are kept as is; no new candidates scanned.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -265,7 +265,7 @@
     }
   ],
   "private": {
-    "checked": "2026-11-10",
+    "checked": "2026-11-11",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
       {
@@ -372,5 +372,5 @@
       ]
     }
   },
-  "checked_at": "11:40"
+  "checked_at": "07:03"
 }
