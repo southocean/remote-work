@@ -283,6 +283,28 @@
         "flag": "Small paint chip on one corner. ~850 kr above the ~10,650 sold median, so worth offering ~10,800"
       },
       {
+        "model": "MacBook Air 13\" M3",
+        "spec": "16 GB · 512 GB · 59 battery cycles",
+        "url": "https://www.tradera.com/item/302393/760569762/apple-macbook-air-13-m3-16gb-ram-512gb-ssd-only-59-battery-cycles",
+        "site": "Tradera",
+        "where": "Auction, ends 17 Nov 18:00 · Malmö, ships 59 kr",
+        "price": null,
+        "price_label": "7,375 kr bid (7,746 with buyer protection), reserve not met",
+        "why": "**Watch.** Same spec as the Blocket M3 above, almost unused (\"no or minimal signs of use\"). **Bid ceiling ~9,500 kr** incl. buyer protection: similar M3 16/512 sell for ~10,650, and the hidden reserve may sit near that.",
+        "flag": "Listing is in English, so **ask which keyboard layout** before bidding. Seller has only 3 reviews. Found via Facebook Marketplace (11 Nov)."
+      },
+      {
+        "model": "MacBook Air 13\" M5",
+        "spec": "16 GB · 512 GB · Midnight",
+        "url": "https://www.tradera.com/item/302393/760652813/macbook-air-13-tum-midnight-m5-chip-16gb-512gb-",
+        "site": "Tradera",
+        "where": "Auction, ends 14 Nov 22:53 · Uppsala, pickup",
+        "price": null,
+        "price_label": "12,000 kr starting bid, no bids (12,499 with buyer protection) · Köp nu 15,000",
+        "why": "**Only at the opening bid.** \"As new, only started and tested\", bought at NetOnNet for ~17,000, local pickup in Uppsala. At 12,499 it roughly ties the NetOnNet Fyndvara M5 (12,872 ex moms) and refurbed's Swedish-keyboard M5 (12,959 ex), which come with a shop warranty. **Ceiling ~12,500 kr bid.** Never pay the 15,000 Köp nu.",
+        "flag": "Ask for the NetOnNet receipt (Apple warranty + proof of purchase). Seller has 4 reviews. Found via Facebook Marketplace (11 Nov)."
+      },
+      {
         "model": "MacBook Pro 14\" M1 Pro",
         "spec": "16 GB · 512 GB · 2021",
         "url": "https://www.tradera.com/item/302393/759338440/macbook-pro-14-tum-2021-apple-m1-pro-16gb-ram-512gb-ssd",
@@ -295,6 +317,10 @@
       }
     ],
     "skipped": [
+      "**MacBook Pro 14\" M1 Pro 16/512** (FB Marketplace, 9,000, Uppsala): English keyboard, 85% battery and 312 cycles; the Tradera one above has a ~6,650 ceiling",
+      "**M5 Air 16/512 sealed** (Vattholma 15,900; Tradera Visby bid 13,999): more than a new M5 costs the company ex moms (13,592)",
+      "**M4 Air 16 GB / M3 Air 15\" 16 GB** (Tradera 9,895 / 9,990): only 256 GB",
+      "**M3 Air 15\" 512 GB with Apple warranty** (Tradera, 8,250): only 8 GB RAM",
       "**M4 Air 16/512** (Blocket, 12,000, Vasastan): sold (9 Nov)",
       "**M1 Air 16/512** (Blocket, 6,800, Hagsätra): listing removed (9 Nov)",
       "**M5 Air 16 GB / 1 TB** (Blocket, 14,000): stain and glue residue on the screen, plus dents",
