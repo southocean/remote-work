@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-11",
-  "status": "Re-checked Reuseit, TeknikFix, Inrego, MacRent, Blocket and Tradera: all still listed, no price changes (Tradera bid still 6,354 kr). Couldn't verify Inet, refurbed, NetOnNet or the PriceRunner new reference (blocked/unreachable), so those are kept as is; no new candidates scanned.",
+  "status": "Re-checked Reuseit, TeknikFix, Inrego, MacRent, refurbed, PriceRunner, Blocket and Tradera; refurbed prices moved up 24–160 kr, the rest is unchanged (Tradera bid still 6,354 kr). Couldn't verify Inet or NetOnNet Fyndvara (403 blocked), so those are kept as is. No new candidates, no Black Week alert (cheapest new M5 Air is 16,990 incl).",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -42,10 +42,10 @@
       "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i7-1255u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 6631,
-      "price_incl": 8289,
+      "price_ex": 6676,
+      "price_incl": 8345,
       "approx": true,
-      "why": "**Backup Best ThinkPad.** Same G10 as Reuseit's with the cooler U-series i7, Swedish keyboard, 12-month warranty. ~870 kr more than Reuseit's",
+      "why": "**Backup Best ThinkPad.** Same G10 as Reuseit's with the cooler U-series i7, Swedish keyboard, 12-month warranty. ~920 kr more than Reuseit's",
       "highlight": false,
       "pick": null
     },
@@ -57,8 +57,8 @@
       "url": "https://www.refurbed.se/p/lenovo-x13-g3-i7-1265u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 6716,
-      "price_incl": 8395,
+      "price_ex": 6740,
+      "price_incl": 8425,
       "approx": true,
       "why": "**Backup X13 G3.** Swedish keyboard, fingerprint reader, 12-month warranty. Pricier than Inet's, but Inet's listing can't be re-checked automatically",
       "highlight": false,
@@ -72,10 +72,10 @@
       "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i5-1245u/",
       "shop": "refurbed",
       "grade": "Mycket bra",
-      "price_ex": 6775,
-      "price_incl": 8469,
+      "price_ex": 6759,
+      "price_incl": 8449,
       "approx": true,
-      "why": "**Better-condition G10.** \"Mycket bra\" grade with an i5, plenty for writing and coding. Pick 512 GB on the page (+1,844 kr incl. over the 256 GB base)",
+      "why": "**Better-condition G10.** \"Mycket bra\" grade with an i5, plenty for writing and coding. Pick 512 GB on the page (+1,764 kr incl. over the 256 GB base)",
       "highlight": false,
       "pick": null
     },
@@ -129,17 +129,17 @@
       "id": "mba-m5-refurbed-de",
       "kind": "mac",
       "model": "MacBook Air 13\" M5",
-      "spec": "M5 · 16 GB · 512 GB · 2026 · Sky Blue",
+      "spec": "M5 · 16 GB · 512 GB · 2026 · Silver",
       "url": "https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/",
       "shop": "refurbed (Janado, DE)",
       "grade": "Nyskick",
-      "price_ex": 11639,
-      "price_incl": 14549,
+      "price_ex": 11767,
+      "price_incl": 14709,
       "approx": true,
-      "why": "**German keyboard (QWERTZ).** Cheapest M5 by ~1,230 kr. Set macOS to the Swedish layout and every key works, but Y/Z and symbol labels are printed wrong. Nyskick, 12-month warranty, \"optimal\" battery. Bought from a German seller with your momsreg nr, so the company accounts for the moms itself (EU reverse charge)",
+      "why": "**German keyboard (QWERTZ).** Cheapest M5 by ~1,100 kr. Set macOS to the Swedish layout and every key works, but Y/Z and symbol labels are printed wrong. Nyskick, 12-month warranty, \"optimal\" battery. Bought from a German seller with your momsreg nr, so the company accounts for the moms itself (EU reverse charge)",
       "highlight": true,
       "pick": "Best long-term Mac",
-      "pick_text": "A like-new M5 Air for ~11,640 ex moms, if you can live with German key labels; the Swedish-keyboard one is ~1,320 kr more."
+      "pick_text": "A like-new M5 Air for ~11,770 ex moms, if you can live with German key labels; the Swedish-keyboard one is ~1,190 kr more."
     },
     {
       "id": "mbp14-m2pro-inrego",
@@ -183,7 +183,7 @@
       "price_ex": 12959,
       "price_incl": 16199,
       "approx": true,
-      "why": "**Swedish-keyboard version.** Same listing with \"Svensk (QWERTY)\" chosen, +1,650 kr incl. Almost exactly the NetOnNet Fyndvara price, but graded Nyskick with a 12-month warranty",
+      "why": "**Swedish-keyboard version.** Same listing with \"Svensk (QWERTY)\" chosen, +1,490 kr incl. Almost exactly the NetOnNet Fyndvara price, but graded Nyskick with a 12-month warranty",
       "highlight": false,
       "pick": null
     }
@@ -192,8 +192,8 @@
     "model": "MacBook Air 13\" M5 · 16 GB · 512 GB (new)",
     "price_ex": 13592,
     "price_incl": 16990,
-    "shop": "NetOnNet (Företag)",
-    "url": "https://www.netonnet.se/",
+    "shop": "NetOnNet (Företag, Midnight)",
+    "url": "https://www.pricerunner.se/pl/27-3457446953/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Midnight-priser",
     "note": "Cheapest new M5 Air from a shop that sells to companies. Used only to show how much the used options save.",
     "approx": true
   },
@@ -227,6 +227,10 @@
     "**Used M4 Air**: none with 512 GB at a seller that invoices with moms. Refurbished M4s cost more than a new M5"
   ],
   "changes": [
+    {
+      "date": "2026-11-11",
+      "text": "refurbed prices rose slightly: German-keyboard M5 Air 11,639 → 11,767 ex, X1 Carbon G10 i7 6,631 → 6,676, X13 G3 6,716 → 6,740, X1 Carbon G10 i5 6,775 → 6,759 (512 GB). Picks unchanged."
+    },
     {
       "date": "2026-11-10",
       "text": "Added four refurbed ThinkPads with 16 GB, 512 GB and a Swedish or Nordic keyboard, as backups: X1 Carbon G10 i7 (~6,631 ex), X1 Carbon G10 i5 Mycket bra (~6,775), X13 G3 i7 (~6,716) and X1 Carbon G11 (~8,471)."
@@ -372,5 +376,5 @@
       ]
     }
   },
-  "checked_at": "07:03"
+  "checked_at": "09:23"
 }
