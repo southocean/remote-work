@@ -69,7 +69,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - Safest used Air: warranty or battery guarantee
      - Best screen Mac: 14" Pro
      - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ that is refurbished, returned or open-box (refurbed "Nyskick", NetOnNet "Fyndvara", Elgiganten Outlet) at a company-buyable seller, priced below new. Returned or outlet units must be **shippable** ("Webblager") or in a **Stockholm-area store**. Skip ones that are "Ej i webblager" and only in a store elsewhere: the buyer can't travel to pick them up.
-     - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**.
+     - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**, or any M2 Air 13" with 16 GB / 512 GB+ under **8,000 kr ex moms**. These are usually gone within a day.
    - Items that aren't the best at a role still get a `why`. Start it with a short bold label such as "**Backup M5 Air.**" or "**Swedish-keyboard version.**".
 4. **Picks:** give `pick` to the holder of each role above that has one. There's no limit on how many picks there are, but each role has only one holder. Each pick gets a one-sentence `pick_text`.
 5. **New M5 Air price + Black Week alert.** Fetch these four PriceRunner pages (13" M5, 16 GB / 512 GB, one per colour) with `curl -sL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"`:
@@ -140,3 +140,27 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
 - Don't add anything that fails a hard requirement, however cheap it is.
 - Don't change the requirements or roles. Only the buyer changes those, by editing this file.
 - Don't re-rank `private` listings, and add new ones only from the Tradera scan in step 6. That list is kept separately because private sellers can't give a moms invoice, so the hard requirements on moms and marketplaces don't apply to it.
+
+## Hourly deal watch (weekdays, daytime)
+
+A second, lighter routine runs **every hour on weekdays during the day** with the prompt "Follow the *Hourly deal watch* section of ROUTINE.md". The buyer's boss can approve a purchase on the spot during those hours, so the goal is to catch a great deal **within the hour**. The page sends a desktop notification for every item that is new to the list, so only add things worth interrupting someone for.
+
+**Do only this:**
+1. Look for **new** listings that beat these thresholds. Don't re-check existing items, and don't touch `new_reference`, `dropped`, picks of other items, or `private.sold`.
+
+   | What | Where | Threshold |
+   |---|---|---|
+   | MacBook Air 13" M2, 16 GB / 512 GB+ | Reuseit, TeknikFix, Inrego, refurbed (not margin scheme) | ≤ **8,000 kr ex moms** |
+   | MacBook Air 13" M3/M4/M5, 16 GB / 512 GB+ | same | ≤ **9,000 kr ex moms** |
+   | MacBook Pro 14" M1 Pro or newer, 16 GB / 512 GB+ | same | ≤ **7,000 kr ex moms** |
+   | ThinkPad X1 Carbon G10+ / X13 G3+, 16 GB / 480 GB+ | Reuseit, Inrego, Inet, refurbed | ≤ **4,300 kr ex moms** |
+   | New MacBook Air 13" M5 16/512 | PriceRunner pages in step 5 (company-buyable shops only) | ≤ **15,500 kr incl.** |
+   | Private Tradera listings | the Tradera scan in step 6 | the ceilings in step 6 |
+
+   Use the shop URLs in **Sources**. All hard requirements still apply to shop items (keyboard: Nordic, US or UK; moms invoice; in stock; 13–14"). On refurbed, check each product page's keyboard options for the cheapest acceptable layout.
+2. **Shop deals** go into `items` with `pick` "Deal alert", `highlight` true, a `why` starting with "**Deal alert.**", and `found_at` "YYYY-MM-DD HH:MM" (Europe/Stockholm). **Tradera finds** go into `private.items` as described in step 6, also with `found_at`.
+3. Skip anything whose URL is already in `items`, `private.items`, `dropped` or `private.skipped`. Never re-add something that was dropped.
+4. **If you added something:** add one line to the front of `changes`, validate the JSON, commit with the message `Hourly deal: <model> <price>` and push (on rejection, `git pull --rebase` and push again). Also send a **PushNotification** with the model, price and URL.
+5. **If you found nothing, change nothing and don't commit.** No status updates, no `checked_at`: the daily run handles bookkeeping.
+6. Keep it quick. If a site can't be loaded, skip it this hour.
+

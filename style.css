@@ -156,3 +156,4 @@ footer{padding:28px 16px 40px}
 .short td{vertical-align:middle}
 .short .spec{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
 .short td:nth-child(2){white-space:nowrap;font-weight:700}
+#lt-notify{font:inherit;cursor:pointer;color:#fff;background:var(--accent);border:0;border-radius:8px;padding:6px 12px}

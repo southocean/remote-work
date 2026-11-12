@@ -85,16 +85,14 @@ function show(id, scroll) {
 addEventListener('hashchange', () => show(location.hash.slice(1), true));
 show(location.hash.slice(1), false);
 
-// Laptop shortlist, rendered from laptops.json (updated daily by a cloud routine)
-(async () => {
+// Laptop shortlist, rendered from laptops.json (updated by cloud routines: daily, plus hourly on weekdays)
+(() => {
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
   const kr = n => n == null ? '–' : Number(n).toLocaleString('en-US');
   const link = (it, label) => /^https:\/\//.test(it.url || '') ? `<a href="${esc(it.url)}" target="_blank" rel="noopener"><b>${esc(label)}</b></a>` : `<b>${esc(label)}</b>`;
-  let d;
-  try { d = await (await fetch('laptops.json', { cache: 'no-cache' })).json(); }
-  catch { $('lt-status').textContent = 'Could not load the shortlist (laptops.json).'; return; }
+  function render(d) {
   $('lt-status').innerHTML = `Last checked <b>${esc(d.checked)}${d.checked_at ? ' ' + esc(d.checked_at) : ''}</b>. ${md(d.status)}`;
   const items = d.items || [];
   $('lt-picks').innerHTML = items.filter(i => i.pick).map(i =>
@@ -120,4 +118,51 @@ show(location.hash.slice(1), false);
       $('lt-sold-take').innerHTML = (so.takeaways || []).map(x => `<li>${md(x)}</li>`).join('');
     }
   }
+  }
+
+  // Deal notifications: anything in the list that this browser hasn't seen before
+  const keyOf = i => i.id || i.url;
+  const listed = d => [...(d.items || []), ...((d.private && d.private.items) || [])].filter(keyOf);
+  const btn = $('lt-notify'), note = $('lt-notify-state');
+  const canNotify = 'Notification' in window;
+  function showState() {
+    if (!canNotify) { btn.hidden = true; note.textContent = 'This browser does not support notifications.'; return; }
+    const p = Notification.permission;
+    btn.hidden = p !== 'default';
+    note.textContent = p === 'granted' ? 'Deal alerts are on in this browser. Keep this page open in a tab; it checks for new listings every 5 minutes.'
+      : p === 'denied' ? 'Notifications are blocked for this site. Allow them in the browser\'s site settings to get deal alerts.'
+      : 'Get a desktop notification when a new deal is added to the list.';
+  }
+  btn.addEventListener('click', async () => { await Notification.requestPermission(); showState(); });
+  showState();
+
+  function notifyNew(d) {
+    const seen = store.get('rw-seen-deals', null);
+    const all = listed(d), keys = all.map(keyOf);
+    if (seen) {
+      const fresh = all.filter(i => !seen.includes(keyOf(i)));
+      if (canNotify && Notification.permission === 'granted') fresh.forEach(i => {
+        const price = i.price_ex != null ? `~${kr(i.price_ex)} kr ex moms` : i.price != null ? `${kr(i.price)} kr` : (i.price_label || '');
+        const n = new Notification(`New deal: ${i.model}`, { body: `${i.spec || ''}\n${price} · ${i.shop || i.site || ''}`, tag: keyOf(i) });
+        n.onclick = () => { window.focus(); if (/^https:\/\//.test(i.url || '')) window.open(i.url, '_blank', 'noopener'); n.close(); };
+      });
+    }
+    store.set('rw-seen-deals', [...new Set([...(seen || []), ...keys])].slice(-300));
+  }
+
+  let last = '';
+  async function load() {
+    let text;
+    try { text = await (await fetch('laptops.json', { cache: 'no-cache' })).text(); }
+    catch { if (!last) $('lt-status').textContent = 'Could not load the shortlist (laptops.json).'; return; }
+    if (text === last) return;
+    last = text;
+    let d;
+    try { d = JSON.parse(text); } catch { return; }
+    render(d);
+    notifyNew(d);
+  }
+  load();
+  setInterval(load, 5 * 60 * 1000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
 })();
