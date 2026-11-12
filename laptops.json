@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-12",
-  "status": "NetOnNet's returned M5 is store-only in Jönköping, so it's dropped; no Best long-term Mac for now. Waiting for the regular Black Week deals, and the routine now scans Tradera for new MacBooks.",
+  "status": "Rechecked all shops except Inet (blocks automated fetches, kept as is); refurbed X13 G3 fell ~200 kr, the other refurbed ThinkPads moved a few kr; Blocket/Tradera re-checked with no new qualifying listings.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -42,8 +42,8 @@
       "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i7-1255u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 6676,
-      "price_incl": 8345,
+      "price_ex": 6692,
+      "price_incl": 8365,
       "approx": true,
       "why": "**Backup Best ThinkPad.** Same G10 as Reuseit's with the cooler U-series i7, Swedish keyboard, 12-month warranty. ~920 kr more than Reuseit's",
       "highlight": false,
@@ -57,8 +57,8 @@
       "url": "https://www.refurbed.se/p/lenovo-x13-g3-i7-1265u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 6740,
-      "price_incl": 8425,
+      "price_ex": 6543,
+      "price_incl": 8179,
       "approx": true,
       "why": "**Backup X13 G3.** Swedish keyboard, fingerprint reader, 12-month warranty. Pricier than Inet's, but Inet's listing can't be re-checked automatically",
       "highlight": false,
@@ -72,8 +72,8 @@
       "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i5-1245u/",
       "shop": "refurbed",
       "grade": "Mycket bra",
-      "price_ex": 6759,
-      "price_incl": 8449,
+      "price_ex": 6764,
+      "price_incl": 8455,
       "approx": true,
       "why": "**Better-condition G10.** \"Mycket bra\" grade with an i5, plenty for writing and coding. Pick 512 GB on the page (+1,764 kr incl. over the 256 GB base)",
       "highlight": false,
@@ -176,6 +176,10 @@
     "**Reuseit L14 G3 64 GB / 1 TB** (7,999 ex): heavy budget model. **P15v / P15s**: 15\" workstations, too heavy"
   ],
   "changes": [
+    {
+      "date": "2026-11-12",
+      "text": "refurbed X13 G3 i7-1265U fell 6,740 → 6,543 ex; X1 Carbon G10 i7 6,676 → 6,692, i5 6,759 → 6,764. NetOnNet new M5 Air still 15,990 incl. (above the alert threshold). No new Tradera listings under the ceilings. Picks unchanged."
+    },
     {
       "date": "2026-11-12",
       "text": "NetOnNet's returned M5 dropped (pickup in Jönköping only). The daily routine now scans Tradera for new MacBooks below the price ceilings and sends a notification when one appears. First scan added a Grade A M5 Air from a Tradera reseller (15,389, moms invoice unconfirmed) and an M3 Air auction to watch."
@@ -374,5 +378,5 @@
       ]
     }
   },
-  "checked_at": "09:23"
+  "checked_at": "07:07"
 }
