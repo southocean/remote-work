@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-12",
-  "status": "Rechecked all shops except Inet (blocks automated fetches, kept as is); refurbed X13 G3 fell ~200 kr, the other refurbed ThinkPads moved a few kr; Blocket/Tradera re-checked with no new qualifying listings.",
+  "status": "Rechecked all shops except Inet (blocks automated fetches, kept as is); refurbed X13 G3 fell ~200 kr, the other refurbed ThinkPads moved a few kr; Blocket/Tradera re-checked with no new qualifying listings. Midday 12 Nov: Webhallen started Black Week and matches NetOnNet's 15,990 for the M5 Air (12,792 ex moms), still above the 15,500 alert. No Black Week price changes at Inrego, Reuseit or TeknikFix.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -145,9 +145,9 @@
     "model": "MacBook Air 13\" M5 · 16 GB · 512 GB (new)",
     "price_ex": 12792,
     "price_incl": 15990,
-    "shop": "NetOnNet (Black Week, was 16,990)",
+    "shop": "NetOnNet / Webhallen (Black Week, was 16,990)",
     "url": "https://www.netonnet.se/art/dator-surfplatta/laptop/laptop-12-14-tum/apple-13-inch-macbook-air-m5-chip-10core-cpu-8core-gpu-16gb-ram-512gb-ssd-midnight/1064530.8906/",
-    "note": "Black Week price in all four colours. Still above the 15,500 kr alert threshold. Check the price holds in Företag mode before ordering.",
+    "note": "Black Week price in all four colours. Still above the 15,500 kr alert threshold. Check the price holds in Företag mode before ordering. Webhallen matched 15,990 on 12 Nov (all four colours); Amazon/CDON/e-ville show 15,899 but can't sell ex moms. Elgiganten, Inet and Komplett still 17,990.",
     "approx": true
   },
   "notes": [
