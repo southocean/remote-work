@@ -68,7 +68,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - Best value Mac: M2 or newer Air, good condition, cheapest
      - Safest used Air: warranty or battery guarantee
      - Best screen Mac: 14" Pro
-     - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ that is refurbished, returned or open-box (refurbed "Nyskick", NetOnNet "Fyndvara", Elgiganten Outlet) at a company-buyable seller, priced below new.
+     - **Best long-term Mac:** the cheapest M4/M5 Air 13" 16 GB / 512 GB+ that is refurbished, returned or open-box (refurbed "Nyskick", NetOnNet "Fyndvara", Elgiganten Outlet) at a company-buyable seller, priced below new. Returned or outlet units must be **shippable** ("Webblager") or in a **Stockholm-area store**. Skip ones that are "Ej i webblager" and only in a store elsewhere: the buyer can't travel to pick them up.
      - **Deal alert:** any M3/M4/M5 Air 13" with 16 GB / 512 GB+ under **9,000 kr ex moms**.
    - Items that aren't the best at a role still get a `why`. Start it with a short bold label such as "**Backup M5 Air.**" or "**Swedish-keyboard version.**".
 4. **Picks:** give `pick` to the holder of each role above that has one. There's no limit on how many picks there are, but each role has only one holder. Each pick gets a one-sentence `pick_text`.
@@ -92,7 +92,34 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - **Tradera:** read the current bid (the number after "Ledande bud") and the end time ("Slutar …"). Update `price_label` to "X kr bid (Y with buyer protection)", using both numbers from the page. Once an auction has ended, remove the item and add "**Model** (Tradera): ended at X kr (D Mon)" to the front of `private.skipped`.
    - If a bid has gone above the ceiling written in the item's `why`, add " Bid is now over the ceiling." to the end of its `flag`, unless it's already there.
    - Set `private.checked` to today. Mention private changes in `status` and `changes` like any other change.
-   - **Don't add new private listings, and don't rewrite `why`, `note` or `sold`.** Those stay hand-picked.
+   - Don't rewrite the `why` of existing items, or `note` or `sold`. New listings come only from the Tradera scan below.
+   - **Scan Tradera for new MacBooks.** Fetch these searches, newest first, with `curl -sL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"`:
+     - https://www.tradera.com/search?q=macbook%20air%20m5&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20air%20m4&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20air%20m3&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20air%20m2%2016gb&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20pro%2014%20m1%20pro&sortBy=AddedOn
+
+     Only look at item links in the laptop category (`/item/302393/…`). Skip any URL already in `private.items`, or whose model and price already appear in `private.skipped`. Open each remaining listing and read its title, description, price, and whether it's "Köp nu" (fixed price) or an auction ("Ledande bud", "Slutar …").
+
+     A listing qualifies if **all** of these hold:
+     - 13" MacBook Air (M2 or newer) or 14" MacBook Pro (M1 Pro or newer). No 15"/16", no Intel.
+     - **16 GB RAM or more and 512 GB storage or more**, stated in the title or description. If either isn't stated, skip it.
+     - Not marked as a UK, US, DE or other non-Nordic keyboard. Not "defekt", "trasig", "för delar", "iCloud-låst", or a box/accessory only.
+     - Price at or under the ceiling for its model. For "Köp nu", use the buy-now price. For an auction, use the current bid, and only if it **ends within 48 hours**.
+
+     | Model | Ceiling (kr) |
+     |---|---|
+     | Air 13" M5 16/512 | 12,000 |
+     | Air 13" M4 16/512 | 11,500 |
+     | Air 13" M3 16/512 | 9,500 |
+     | Air 13" M2 16/512 | 8,000 |
+     | Pro 14" M1 Pro 16/512 or newer | 7,500 |
+
+     These are below the typical sold prices in `private.sold`, and below what the company pays for a new M5 ex moms.
+
+     Add each qualifying listing to `private.items`, with `site` "Tradera" and `where` set to the seller's town, plus "auction, ends D Mon HH:MM" or "Köp nu". Fixed price → `price`. Auction → `price: null` and `price_label` "X kr bid (Y with buyer protection)". `why` starts with "**New on Tradera.**", then one short sentence on condition and battery from the ad. Its `flag` says what to check (keyboard, battery, warranty, and for auctions: "Final price will climb; ceiling X"). Add it to `changes` and send a **PushNotification**: "Tradera: <model> for <price> kr (<Köp nu / auction ends …>). <url>". Keep at most 8 items in `private.items`; if there are more, remove the oldest Tradera ones first.
+     If the searches can't be loaded, say "couldn't scan Tradera" in `status`.
 7. **Bookkeeping:**
    - `checked` = today's date in Europe/Stockholm (YYYY-MM-DD).
    - `checked_at` = the time you finished, in Europe/Stockholm (HH:MM). **Update it on every run, even when nothing else changed**, so the page shows the routine is alive.
@@ -112,4 +139,4 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
 - Don't invent prices or stock. If unsure, leave the item as it is and say so in `status`.
 - Don't add anything that fails a hard requirement, however cheap it is.
 - Don't change the requirements or roles. Only the buyer changes those, by editing this file.
-- Don't add or re-rank `private` listings. That list is hand-picked, kept separately because private sellers can't give a moms invoice. Only refresh it as described in step 6.
+- Don't re-rank `private` listings, and add new ones only from the Tradera scan in step 6. That list is kept separately because private sellers can't give a moms invoice, so the hard requirements on moms and marketplaces don't apply to it.

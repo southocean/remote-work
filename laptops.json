@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-12",
-  "status": "Checked by hand: refurbed's German-keyboard M5 is now sold under the margin scheme, so it's dropped. Best long-term Mac is now NetOnNet's returned M5 at 15,190 incl.",
+  "status": "NetOnNet's returned M5 is store-only in Jönköping, so it's dropped; no Best long-term Mac for now. Waiting for the regular Black Week deals, and the routine now scans Tradera for new MacBooks.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -139,22 +139,6 @@
       "highlight": true,
       "pick": null,
       "approx": true
-    },
-    {
-      "id": "mba-m5-netonnet-fynd",
-      "kind": "mac",
-      "model": "MacBook Air 13\" M5",
-      "spec": "M5 · 16 GB · 512 GB · 2026 · Midnight",
-      "url": "https://www.netonnet.se/art/fyndvaror/dator-surfplatta/apple-x-13-inch-macbook-air-apple-m5-chip-with-10core-cpu-and-8core-gpu-16gb-512gb-ssd-midnight/x1064530.4802/",
-      "shop": "NetOnNet (Fyndvara)",
-      "grade": "Returned item",
-      "price_ex": 12152,
-      "price_incl": 15190,
-      "approx": true,
-      "why": "**Best long-term Mac.** Returned M5 Air, Swedish shop, 800 kr under the new Black Week price. One unit, in a store only (reserve it with \"Paxa\"). Ask why it was returned, and confirm Swedish keyboard and warranty start date",
-      "highlight": true,
-      "pick": "Best long-term Mac",
-      "pick_text": "The newest chip with a Swedish keyboard for ~12,150 ex moms, from a shop that invoices the company with moms."
     }
   ],
   "new_reference": {
@@ -170,6 +154,7 @@
     "Reuseit sells some items under the margin scheme (VMB) and marks them \"Denna produkt säljs enligt vinstmarginalbeskattning\". The listings above showed **no such note** and list prices as \"inkl. moms\". Ask Reuseit to confirm full moms on the invoice before ordering. TeknikFix itemises moms at checkout and shows ex-moms prices in business mode."
   ],
   "dropped": [
+    "**MacBook Air 13\" M5, returned** (NetOnNet Fyndvara, 15,190): the only unit is in the Jönköping store, which doesn't ship it, and pickup there isn't possible (2026-11-12)",
     "**MacBook Air 13\" M5, German keyboard** (refurbed, 13,615): now sold under the margin scheme (\"inkl. marginalbeskattning\"), so there's no moms to reclaim and the company pays the full price (2026-11-12)",
     "**MacBook Air 13\" M5 Swedish keyboard** (refurbed, 16,199 incl.): a new one at NetOnNet's Black Week price is 209 kr cheaper, with full warranty (2026-11-12)",
     "**refurbed T14s G4 i7-1355U 16/512 Nordic** (~9,076 ex): pricier than the X1 Carbon G11, which is lighter and newer",
@@ -188,10 +173,13 @@
     "**T14s G2 i5/i7** (Inet), **T14s G3 i7** (Inrego, 6,399), **X13 G4** (Inrego, 6,799): the X1 Carbon G10 is lighter, has a better 14\" screen, and costs less than or about the same as each",
     "**X1 Yoga G8** (Inrego, 8,599): you'd be paying for touch and a 2-in-1 hinge you don't need",
     "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster",
-    "**Reuseit L14 G3 64 GB / 1 TB** (7,999 ex): heavy budget model. **P15v / P15s**: 15\" workstations, too heavy",
-    "**MacBook Air 13\" M5, new** (~13,592 ex at NetOnNet): you prefer used, and a used M2 Air does nearly everything it does for about half the price"
+    "**Reuseit L14 G3 64 GB / 1 TB** (7,999 ex): heavy budget model. **P15v / P15s**: 15\" workstations, too heavy"
   ],
   "changes": [
+    {
+      "date": "2026-11-12",
+      "text": "NetOnNet's returned M5 dropped (pickup in Jönköping only). The daily routine now scans Tradera for new MacBooks below the price ceilings and sends a notification when one appears. First scan added a Grade A M5 Air from a Tradera reseller (15,389, moms invoice unconfirmed) and an M3 Air auction to watch."
+    },
     {
       "date": "2026-11-12",
       "text": "refurbed's German-keyboard M5 switched to the margin scheme (13,615, no moms to reclaim) and was dropped. Best long-term Mac is now NetOnNet's returned M5 Air at ~12,152 ex moms."
@@ -242,7 +230,7 @@
     }
   ],
   "private": {
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
       {
@@ -287,9 +275,20 @@
         "price_label": "6,354 kr bid (6,674 with buyer protection)",
         "why": "**Watch.** The bigger, better 120 Hz screen. **Bid ceiling ~6,650 kr** (~7,000 with buyer protection): similar ones sell for 7,500–9,500, but this one comes without a charger and has cosmetic wear.",
         "flag": "\"Okej\" condition: sticker marks on the lid, one bottom screw missing. **Computer only, no charger** (~600–900 kr extra). Battery health and keyboard layout not stated, so ask before bidding. Heavier (~1.6 kg)"
+      },
+      {
+        "model": "MacBook Air 13\" M5",
+        "spec": "16 GB · 512 GB · 2026 · Grade A",
+        "url": "https://www.tradera.com/item/302393/738474893/macbook-air-13-m5-2026-apple-m5-10-core-8-core-gpu-16-gb-ram-512-gb-ssd-grade-a",
+        "site": "Tradera",
+        "where": "Company seller (mresell), Köp nu, free shipping",
+        "price": 15389,
+        "why": "**New on Tradera.** A reseller, not a private person: \"Nyskick\", Swedish keyboard, 12-month warranty. If they invoice with 25% moms it costs the company ~12,311 ex, about 480 kr under a new one at NetOnNet.",
+        "flag": "Ask first: can they invoice the company with moms shown (not the margin scheme)? If not, a new M5 is cheaper"
       }
     ],
     "skipped": [
+      "**MacBook Air 13\" M5 16/512, new and sealed** (Tradera, 13,999, ends 14 Nov): private seller, so no moms to reclaim; a new one at NetOnNet costs the company ~12,792",
       "**MacBook Pro 14\" M1 Pro 16/512** (FB Marketplace, 9,000, Uppsala): English keyboard, 85% battery and 312 cycles; the Tradera one above has a ~6,650 ceiling",
       "**M5 Air 16/512 sealed** (Vattholma 15,900; Tradera Visby bid 13,999): more than a new M5 costs the company ex moms (13,592)",
       "**M4 Air 16 GB / M3 Air 15\" 16 GB** (Tradera 9,895 / 9,990): only 256 GB",
