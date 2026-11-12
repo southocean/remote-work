@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-11",
-  "status": "Re-checked Reuseit, TeknikFix, Inrego, MacRent, refurbed, PriceRunner, Blocket and Tradera; refurbed prices moved up 24–160 kr, the rest is unchanged (Tradera bid still 6,354 kr). Couldn't verify Inet or NetOnNet Fyndvara (403 blocked), so those are kept as is. No new candidates, no Black Week alert (cheapest new M5 Air is 16,990 incl).",
+  "checked": "2026-11-12",
+  "status": "Checked NetOnNet's Black Week by hand: the new 13\" M5 Air 16/512 is 15,990 incl. (was 16,990) and the Fyndvara M5 dropped to 15,190. No other MacBook is discounted there, and no M4s are left.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -164,43 +164,29 @@
       "url": "https://www.netonnet.se/art/fyndvaror/dator-surfplatta/apple-x-13-inch-macbook-air-apple-m5-chip-with-10core-cpu-and-8core-gpu-16gb-512gb-ssd-midnight/x1064530.4802/",
       "shop": "NetOnNet (Fyndvara)",
       "grade": "Returned item",
-      "price_ex": 12872,
-      "price_incl": 16090,
+      "price_ex": 12152,
+      "price_incl": 15190,
       "approx": true,
-      "why": "**Backup M5 Air, Swedish shop.** Returned item, 720 kr under new. Ask why it was returned (uncollected, cooling-off return or repaired unit), and confirm Swedish keyboard and warranty start date",
+      "why": "**Backup M5 Air, Swedish shop.** Returned item, now 800 kr under the new Black Week price. One unit, in a store only (reserve it with \"Paxa\"). Ask why it was returned, and confirm Swedish keyboard and warranty start date",
       "highlight": false,
       "pick": null,
       "pick_text": "A returned M5 Air at ~12,900 ex moms: newest chip and longest support for about the price of a used M4. Few left; NetOnNet's Black Week starts 12 Nov."
-    },
-    {
-      "id": "mba-m5-refurbed-se",
-      "kind": "mac",
-      "model": "MacBook Air 13\" M5",
-      "spec": "M5 · 16 GB · 512 GB · 2026 · Swedish keyboard",
-      "url": "https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/",
-      "shop": "refurbed (pick \"Svensk\" layout)",
-      "grade": "Nyskick",
-      "price_ex": 12959,
-      "price_incl": 16199,
-      "approx": true,
-      "why": "**Swedish-keyboard version.** Same listing with \"Svensk (QWERTY)\" chosen, +1,490 kr incl. Almost exactly the NetOnNet Fyndvara price, but graded Nyskick with a 12-month warranty",
-      "highlight": false,
-      "pick": null
     }
   ],
   "new_reference": {
     "model": "MacBook Air 13\" M5 · 16 GB · 512 GB (new)",
-    "price_ex": 13592,
-    "price_incl": 16990,
-    "shop": "NetOnNet (Företag, Midnight)",
-    "url": "https://www.pricerunner.se/pl/27-3457446953/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Midnight-priser",
-    "note": "Cheapest new M5 Air from a shop that sells to companies. Used only to show how much the used options save.",
+    "price_ex": 12792,
+    "price_incl": 15990,
+    "shop": "NetOnNet (Black Week, was 16,990)",
+    "url": "https://www.netonnet.se/art/dator-surfplatta/laptop/laptop-12-14-tum/apple-13-inch-macbook-air-m5-chip-10core-cpu-8core-gpu-16gb-ram-512gb-ssd-midnight/1064530.8906/",
+    "note": "Black Week price in all four colours. Still above the 15,500 kr alert threshold. Check the price holds in Företag mode before ordering.",
     "approx": true
   },
   "notes": [
     "Reuseit sells some items under the margin scheme (VMB) and marks them \"Denna produkt säljs enligt vinstmarginalbeskattning\". The listings above showed **no such note** and list prices as \"inkl. moms\". Ask Reuseit to confirm full moms on the invoice before ordering. TeknikFix itemises moms at checkout and shows ex-moms prices in business mode."
   ],
   "dropped": [
+    "**MacBook Air 13\" M5 Swedish keyboard** (refurbed, 16,199 incl.): a new one at NetOnNet's Black Week price is 209 kr cheaper, with full warranty (2026-11-12)",
     "**refurbed T14s G4 i7-1355U 16/512 Nordic** (~9,076 ex): pricier than the X1 Carbon G11, which is lighter and newer",
     "**refurbed X13 G4 i7-1365U**: only 32 GB/256 GB, or 512 GB with a German keyboard, at ~8,780 ex",
     "**refurbed X1 Carbon G9 i7-1165G7 16/512 Swedish** (~7,335 ex): older than the G10s, and costs more",
@@ -219,14 +205,13 @@
     "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster",
     "**Reuseit L14 G3 64 GB / 1 TB** (7,999 ex): heavy budget model. **P15v / P15s**: 15\" workstations, too heavy",
     "**MacBook Air 13\" M5, new** (~13,592 ex at NetOnNet): you prefer used, and a used M2 Air does nearly everything it does for about half the price",
-    "**MacBook Air 15\" M5**: new, and more than the MBP 14",
-    "**MacBook Pro 14\" M1 Pro 32 GB / 1 TB** (Reuseit, ~9,599 ex, Okej): heavier, older battery, shorter macOS support than the M2 Air; 32 GB is more than you need",
-    "**MacBook Pro 14\" M2 Pro at TeknikFix** (14,392, B-grade): the same machine is 2,150 kr cheaper at Inrego",
-    "**MacBook Pro 16\"** M2 Pro / M2 Max: too big and heavy to travel with (2.1 kg)",
-    "**MacRent** used Macs: M1 Air with only 256 GB, MBP 13\" with 8 GB RAM, and Pros from 16,800. Nothing beats the list",
-    "**Used M4 Air**: none with 512 GB at a seller that invoices with moms. Refurbished M4s cost more than a new M5"
+    "**MacBook Air 15\" M5**: new, and more than the MBP 14"
   ],
   "changes": [
+    {
+      "date": "2026-11-12",
+      "text": "NetOnNet Black Week: new M5 Air 16/512 down to 15,990 incl. (~12,792 ex), Fyndvara M5 down to 15,190 (~12,152 ex). The Swedish-keyboard refurbed M5 dropped, since new is now cheaper."
+    },
     {
       "date": "2026-11-11",
       "text": "refurbed prices rose slightly: German-keyboard M5 Air 11,639 → 11,767 ex, X1 Carbon G10 i7 6,631 → 6,676, X13 G3 6,716 → 6,740, X1 Carbon G10 i5 6,775 → 6,759 (512 GB). Picks unchanged."
