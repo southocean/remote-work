@@ -14,7 +14,7 @@ Instructions for the cloud routine that runs every morning. It keeps the Laptop 
 ## Hard requirements (otherwise exclude)
 
 1. **16 GB RAM or more** and **480 GB storage or more**.
-2. **Swedish/Nordic keyboard preferred.** If the listing doesn't say, assume Swedish for Swedish shops. Another ISO layout (DE, DK, NO, FI) is allowed only if it's at least 1,000 kr ex moms cheaper than the same machine with a Swedish keyboard. Start its `why` with "**German keyboard (QWERTZ).**" (or whichever layout it is). Exclude US/UK layouts.
+2. **Keyboard: Swedish/Nordic, US or UK English.** If the listing doesn't say, assume Swedish for Swedish shops. On refurbed, check every keyboard option: the cheapest of these layouts wins. Another layout (DE, FR, ES, IT, CH…) is allowed only if it's at least 1,000 kr ex moms cheaper than the same machine with one of these. Start its `why` with "**German keyboard (QWERTZ).**" (or whichever layout it is).
 3. **The company can buy it with full moms on the invoice.**
    - Exclude anything sold under the margin scheme (VMB / "vinstmarginalbeskattning"). Reuseit marks those listings with "Denna produkt säljs enligt vinstmarginalbeskattning". Look for that text in the *visible product text*, not in the JS bundles.
    - Exclude marketplaces where the seller is unknown (OnBuy, Amazon, CDON, Fyndiq, Blocket, Tradera, Back Market). **refurbed.se is allowed.** Its checkout has a Företag option asking for a momsreg nr and shows the "Netto" price. Record the named seller (e.g. Janado) and the country it ships from in `shop`, e.g. "refurbed (Janado, DE)". Sellers can switch an offer to the margin scheme: if the price shows "inkl. marginalbeskattning" (in company mode too), it fails this requirement.
@@ -105,7 +105,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      A listing qualifies if **all** of these hold:
      - 13" MacBook Air (M2 or newer) or 14" MacBook Pro (M1 Pro or newer). No 15"/16", no Intel.
      - **16 GB RAM or more and 512 GB storage or more**, stated in the title or description. If either isn't stated, skip it.
-     - Not marked as a UK, US, DE or other non-Nordic keyboard. Not "defekt", "trasig", "för delar", "iCloud-låst", or a box/accessory only.
+     - Keyboard is Nordic, US or UK English (or not stated). Skip DE, FR and other layouts. Not "defekt", "trasig", "för delar", "iCloud-låst", or a box/accessory only.
      - Price at or under the ceiling for its model. For "Köp nu", use the buy-now price. For an auction, use the current bid, and only if it **ends within 48 hours**.
 
      | Model | Ceiling (kr) |
