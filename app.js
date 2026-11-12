@@ -97,6 +97,12 @@ show(location.hash.slice(1), false);
   const items = d.items || [];
   $('lt-picks').innerHTML = items.filter(i => i.pick).map(i =>
     `<div class="card accent"><b>${esc(i.pick)}</b><p>${link(i, i.model)}, ${esc(i.spec)}, ${esc(i.grade)}<br><span class="price">${i.approx ? '~' : ''}${kr(i.price_ex)} kr</span> <span class="muted small">· ${esc(i.shop)}${i.price_incl ? ` (${kr(i.price_incl)} incl.)` : ''}</span><br>${md(i.pick_text)}</p></div>`).join('');
+  const sb = d.strong_buy;
+  if (sb) {
+    $('lt-floor-note').innerHTML = md(sb.note);
+    $('lt-floor').innerHTML = (sb.rows || []).map(r =>
+      `<tr><td>${esc(r.model)}</td><td><b>${kr(r.max)} kr</b></td><td class="opt">${r.pct ? r.pct + '%' : '–'}</td></tr>`).join('');
+  }
   $('lt-rows').innerHTML = items.map(i =>
     `<tr${i.highlight ? ' class="hl"' : ''}><td>${link(i, i.model)}<span class="spec">${esc(i.spec)}</span></td><td>${i.approx ? "~" : ""}${kr(i.price_ex)}</td><td>${md(i.why)}</td><td class="opt">${esc(i.shop)} · ${esc(i.grade)}${i.price_incl ? ` (${kr(i.price_incl)} incl.)` : ''}</td></tr>`).join('');
   const r = d.new_reference;
