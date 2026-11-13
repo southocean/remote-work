@@ -19,27 +19,24 @@ Instructions for the cloud routine that runs every morning. It keeps the Laptop 
    - Exclude anything sold under the margin scheme (VMB / "vinstmarginalbeskattning"). Reuseit marks those listings with "Denna produkt säljs enligt vinstmarginalbeskattning". Look for that text in the *visible product text*, not in the JS bundles.
    - Exclude marketplaces where the seller is unknown (OnBuy, Amazon, CDON, Fyndiq, Blocket, Tradera, Back Market). **refurbed.se is allowed.** Its checkout has a Företag option asking for a momsreg nr and shows the "Netto" price. Record the named seller (e.g. Janado) and the country it ships from in `shop`, e.g. "refurbed (Janado, DE)". Sellers can switch an offer to the margin scheme: if the price shows "inkl. marginalbeskattning" (in company mode too), it fails this requirement.
 4. **In stock or orderable.** "Slut i lager" means it's gone.
-5. **Light enough to travel:** 13–14" only. No 15–16", no workstations (P-series), no L-series.
+5. **Size:** MacBook Air 13", MacBook Pro 14", or **MacBook Air 15"** (M2 or newer; tracked in case second-hand 15" prices drop further). No 16". **No ThinkPads or other Windows laptops:** the buyer dropped them on 2026-11-13.
 6. **Used or refurbished must be cheaper than new.** If its listed price (incl. moms) is at or above the new reference in `new_reference` for the same model and spec, drop it. Discount codes (e.g. MACPAD8) don't count, because they aren't guaranteed at checkout.
 
 ## Families worth tracking
 
 - **MacBook Air 13"**: M1, M2, M3, M4, M5
 - **MacBook Pro 14"**: M1 Pro or newer
-- **ThinkPad X1 Carbon**: G9 or newer
-- **ThinkPad X13**: G3 or newer (G2 only if very cheap)
-- **ThinkPad T14s**: G2 or newer
+- **MacBook Air 15"**: M2, M3, M4, M5
 
-Prefer Intel **U-series** chips (e.g. i7-1255U) over **P-series** (i7-1260P/1270P), because P-series run hotter and have shorter battery life. Skip Yoga/2-in-1/touch models unless they're the cheapest for their role.
 
 ## Sources
 
 | Shop | Where to look | Price shown | Notes |
 |---|---|---|---|
-| Reuseit | https://reuseit.se/sv/category/laptops/macbook and https://reuseit.se/sv/category/laptops/lenovo-laptops | incl. moms → ÷ 1.25 | Check each candidate's product page for the VMB sentence. Grades: Mycket bra > Bra > Okej |
-| Inrego | https://shop.inrego.se/barbara (search: https://shop.inrego.se/sok?q=x13 etc.) | incl. by default (an ex-moms toggle exists) | Grades: Mycket bra > Bra |
+| Reuseit | https://reuseit.se/sv/category/laptops/macbook | incl. moms → ÷ 1.25 | Check each candidate's product page for the VMB sentence. Grades: Mycket bra > Bra > Okej |
+| Inrego | https://shop.inrego.se/barbara (search: https://shop.inrego.se/sok?q=macbook%20air etc.) | incl. by default (an ex-moms toggle exists) | Grades: Mycket bra > Bra |
 | TeknikFix | https://teknikfix.se/produkt-kategori/macbook/ and https://teknikfix.se/produkt-kategori/begagnade-datorer/begagnade-laptops/ | incl. by default → ÷ 1.25 (ex-moms in business mode) | Grades A+ > A > B. 12-month warranty, battery ≥80% guaranteed |
-| Inet (refurbished) | https://www.inet.se/hitta?q=refurbished%20thinkpad | incl. → ÷ 1.25 | "A Grade" = battery >70% |
+| Inet (refurbished) | https://www.inet.se/hitta?q=refurbished%20macbook | incl. → ÷ 1.25 | "A Grade" = battery >70% |
 | MacRent | https://www.macrent.se/begagnat/begagnad-macbook/ | ex moms shown | Business-only seller; shows battery % |
 | refurbed | https://www.refurbed.se/c/macbook-air/ and product pages like https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/ | incl. → ÷ 1.25 (= the "Netto" price at checkout) | Grades: Nyskick > Mycket bra > Bra. 12-month warranty, 30-day returns. Check the keyboard layout dropdown: other layouts cost more |
 | NetOnNet Fyndvaror | https://www.netonnet.se/art/fyndvaror/dator-surfplatta/ (search "macbook air") | incl. → ÷ 1.25 | Returned items: uncollected, cooling-off returns, or repaired units. Note which on the page if stated |
@@ -63,8 +60,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - Keep the list readable: at most ~20 items. If it's longer, drop the least competitive first.
    - Roles, used for `why` and picks:
      - Cheapest overall
-     - Best value ThinkPad: cheapest 12th-gen-or-newer in top condition
-     - Best ThinkPad: premium 14", light, good condition
+     - Best 15" Air: cheapest 15" Air 16/512 at or under its watch price
      - Cheapest Mac
      - Best value Mac: M2 or newer Air, good condition, cheapest
      - Safest used Air: warranty or battery guarantee
@@ -102,6 +98,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - https://www.tradera.com/search?q=macbook%20pro%2014%20m1%20pro&sortBy=AddedOn
      - https://www.tradera.com/search?q=macbook%20pro%2014%20m2%20pro&sortBy=AddedOn
      - https://www.tradera.com/search?q=macbook%20air%2024gb&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20air%2015&sortBy=AddedOn
      - https://www.tradera.com/search?q=macbook%20air%2016gb%20512&sortBy=AddedOn
 
      **Also scan Blocket** the same way (item links look like `/recommerce/forsale/item/<id>`; the search pages are plain HTML):
@@ -110,11 +107,12 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%20m3&sort=PUBLISHED_DESC
      - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%20m2%2016gb&sort=PUBLISHED_DESC
      - https://www.blocket.se/recommerce/forsale/search?q=macbook%20pro%2014&sort=PUBLISHED_DESC
+     - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%2015&sort=PUBLISHED_DESC
 
      Only look at item links in the laptop category (`/item/302393/…`). Skip any URL already in `private.items`, or whose model and price already appear in `private.skipped`. Open each remaining listing and read its title, description, price, and whether it's "Köp nu" (fixed price) or an auction ("Ledande bud", "Slutar …").
 
      A listing qualifies if **all** of these hold:
-     - 13" MacBook Air (M2 or newer) or 14" MacBook Pro (M1 Pro or newer). No 15"/16", no Intel.
+     - 13" or 15" MacBook Air (M2 or newer) or 14" MacBook Pro (M1 Pro or newer). No 16", no Intel.
      - **16 GB RAM or more and 512 GB storage or more**, stated in the title or description. If either isn't stated, skip it.
      - Keyboard is Nordic, US or UK English (or not stated). Skip DE, FR and other layouts. Not "defekt", "trasig", "för delar", "iCloud-låst", or a box/accessory only.
      - Price at or under the **watch price** for its model (table in **Price floor and strong-buy prices**). For "Köp nu" or Blocket, use the asking price. For an auction, use the **current bid plus buyer protection**, whatever its end time: the list tracks the bid every day, so a good auction should be on it from the day it appears, not only in its last 48 hours.
@@ -134,7 +132,7 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
    - `status` = one short sentence about today, e.g. "Checked all 5 shops, no changes." or "Reuseit M2 Air dropped 400 kr; couldn't verify Inet."
    - Add one entry to the front of `changes` (`{date, text}`) **only if something changed**. Keep the 30 newest.
    - Keep `dropped` to the 20 most useful entries, newest reasons first.
-   - Order `items`: ThinkPads by price, then Macs by price. Set `highlight: true` on the picks.
+   - Order `items`: 13" Airs by price, then 15" Airs by price, then 14" Pros by price. Set `highlight: true` on the picks.
 8. **Style:** plain English, short. Each `why` starts with its role in bold (`**Best value Mac.** …`). Only `**bold**` markup is allowed; no HTML.
 9. **Validate and publish:**
    - `python3 -m json.tool laptops.json > /dev/null` must pass.
@@ -159,7 +157,10 @@ The buyer's **price floor is a new MacBook Air 13" M5 16/512 at 14,500 kr incl. 
 | MacBook Air 13" M3 | 8,700 | 9,800 |
 | MacBook Air 13" M2 | 7,600 | 8,500 |
 | MacBook Pro 14" M1 Pro or M2 Pro | 7,000 | 8,500 |
-| ThinkPad X1 Carbon G10+ / X13 G3+ (16 GB / 480 GB+) | 4,300 | 5,500 |
+| MacBook Air 15" M5, used or refurbished | 11,200 | 12,800 |
+| MacBook Air 15" M4 | 10,000 | 11,800 |
+| MacBook Air 15" M3 | 9,300 | 10,500 |
+| MacBook Air 15" M2 | 8,200 | 9,200 |
 
 The strong-buy numbers are also in `strong_buy` in laptops.json, which the page shows. Watch prices sit roughly halfway between strong buy and what a new M5 costs the company; anything above them loses to buying new. Only the buyer changes either column.
 
@@ -173,7 +174,7 @@ A second, lighter routine runs **every hour on weekdays during the day** with th
    - **Used, refurbished or returned machines** at Reuseit, TeknikFix, Inrego, Inet, refurbed (margin scheme counts at full price) and Tradera: at or under the strong-buy price in **Price floor and strong-buy prices**.
    - **New MacBook Air 13" M5 16/512** at a company-buyable shop (PriceRunner pages in step 5): **≤ 14,990 kr incl.** At ≤ 14,500 the floor is reached; say "Floor reached: buy new" in its `why`.
 
-   Use the shop URLs in **Sources**. The hard requirements still apply (keyboard: Nordic, US or UK; in stock; 13–14"), except that a margin-scheme offer may qualify if its **full price** is at or under the strong-buy price. On refurbed, check each product page's keyboard options for the cheapest acceptable layout.
+   Use the shop URLs in **Sources**. The hard requirements still apply (keyboard: Nordic, US or UK; in stock; 13"/15" Air or 14" Pro), except that a margin-scheme offer may qualify if its **full price** is at or under the strong-buy price. On refurbed, check each product page's keyboard options for the cheapest acceptable layout.
 2. **Shop deals** go into `items` with `pick` "Deal alert", `highlight` true, a `why` starting with "**Deal alert.**", and `found_at` "YYYY-MM-DD HH:MM" (Europe/Stockholm). **Tradera and Blocket finds** go into `private.items` as described in step 6, also with `found_at`, but in the hourly run add **strong buys only**; the daily run adds the "Worth watching" tier.
 3. Skip anything whose URL is already in `items`, `private.items`, `dropped` or `private.skipped`. Never re-add something that was dropped.
 4. **If you added something:** add one line to the front of `changes`, validate the JSON, commit with the message `Hourly deal: <model> <price>` and push (on rejection, `git pull --rebase` and push again). Also send a **PushNotification** with the model, price and URL.

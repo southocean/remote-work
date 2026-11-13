@@ -3,98 +3,6 @@
   "status": "Re-checked refurbed, Reuseit, Inrego, TeknikFix, MacRent (category only), PriceRunner, Blocket and Tradera; refurbed M2 UK offer sold out, small refurbed price moves, new M5 Air still 15,990. Couldn't verify Inet (403) or the MacRent M1 Air item page; kept both.",
   "items": [
     {
-      "id": "x13-g3-inet",
-      "kind": "thinkpad",
-      "model": "X13 G3",
-      "spec": "i7-1255U · 16 GB · 512 GB · 13.3\"",
-      "url": "https://www.inet.se/produkt/1980544/lenovo-thinkpad-x13-g3-i7-16gb-512gb-refurbished-a-grade",
-      "shop": "Inet",
-      "grade": "A",
-      "price_ex": 4792,
-      "price_incl": 5990,
-      "why": "**Best value.** Cheapest 12th-gen in top condition (A-grade), and now the cheapest item overall",
-      "highlight": true,
-      "pick": "Best value",
-      "pick_text": "Same chip as the X1 Carbon G10, A-grade, about 1,200 kr cheaper. Smaller 13.3\" screen and ~150 g heavier.",
-      "approx": false
-    },
-    {
-      "id": "x1c-g10-1265u-bra-reuseit",
-      "kind": "thinkpad",
-      "model": "X1 Carbon G10",
-      "spec": "i7-1265U · 16 GB · 512 GB · 14\" touch",
-      "url": "https://reuseit.se/sv/product/lenovo-thinkpad-x1-carbon-gen-10-12th-gen-intel-core-i7-1265u-16gb-512gb-touch-win-2",
-      "shop": "Reuseit",
-      "grade": "Bra",
-      "price_ex": 5759,
-      "price_incl": 7199,
-      "why": "**Best ThinkPad.** 14\" touch, ~1.24 kg, U-series chip, premium build, Bra condition, 2-year warranty",
-      "highlight": true,
-      "pick": "Best ThinkPad",
-      "pick_text": "The premium ThinkPad now: U-series i7-1265U, ~1.24 kg, best keyboard, Bra condition. The Mycket bra one sold out; this costs about 240 kr less.",
-      "approx": true
-    },
-    {
-      "id": "x13-g3-1265u-refurbed",
-      "kind": "thinkpad",
-      "model": "X13 G3",
-      "spec": "i7-1265U · 16 GB · 512 GB · 13.3\" · Swedish",
-      "url": "https://www.refurbed.se/p/lenovo-x13-g3-i7-1265u/",
-      "shop": "refurbed",
-      "grade": "Bra",
-      "price_ex": 6559,
-      "price_incl": 8199,
-      "approx": true,
-      "why": "**Backup X13 G3.** Swedish keyboard, fingerprint reader, 12-month warranty. Pricier than Inet's, but Inet's listing can't be re-checked automatically",
-      "highlight": false,
-      "pick": null
-    },
-    {
-      "id": "x1c-g10-1255u-refurbed",
-      "kind": "thinkpad",
-      "model": "X1 Carbon G10",
-      "spec": "i7-1255U · 16 GB · 512 GB · 14\" · Swedish",
-      "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i7-1255u/",
-      "shop": "refurbed",
-      "grade": "Bra",
-      "price_ex": 6660,
-      "price_incl": 8325,
-      "approx": true,
-      "why": "**Backup Best ThinkPad.** Same G10 as Reuseit's with the cooler U-series i7, Swedish keyboard, 12-month warranty. ~920 kr more than Reuseit's",
-      "highlight": false,
-      "pick": null
-    },
-    {
-      "id": "x1c-g10-1245u-refurbed",
-      "kind": "thinkpad",
-      "model": "X1 Carbon G10",
-      "spec": "i5-1245U · 16 GB · 512 GB · 14\" · Swedish",
-      "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i5-1245u/",
-      "shop": "refurbed",
-      "grade": "Mycket bra",
-      "price_ex": 6764,
-      "price_incl": 8455,
-      "approx": true,
-      "why": "**Better-condition G10.** \"Mycket bra\" grade with an i5, plenty for writing and coding. Pick 512 GB on the page (+1,764 kr incl. over the 256 GB base)",
-      "highlight": false,
-      "pick": null
-    },
-    {
-      "id": "x1c-g11-1355u-refurbed",
-      "kind": "thinkpad",
-      "model": "X1 Carbon G11",
-      "spec": "i7-1355U · 16 GB · 512 GB · 14\" · Nordic",
-      "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g11-i7-1355u/",
-      "shop": "refurbed",
-      "grade": "Bra",
-      "price_ex": 8396,
-      "price_incl": 10495,
-      "approx": true,
-      "why": "**Newest X1 Carbon.** 13th-gen U-series, Nordic keyboard (has å/ä/ö), 12-month warranty. Costs about the same as a used Mac, so only worth it if you want Windows",
-      "highlight": false,
-      "pick": null
-    },
-    {
       "id": "mbp14-m1pro-refurbed",
       "kind": "mac",
       "model": "MacBook Pro 14\"",
@@ -170,6 +78,7 @@
     "refurbed has an extra **8% off all MacBooks with code MACPAD8** (seen 12 Nov). Check that it still applies in company mode, and check each offer for the margin scheme there: refurbed prices here are list prices ÷ 1.25, which only holds if the seller invoices with moms."
   ],
   "dropped": [
+    "**All ThinkPads** (6 listings: X13 G3, X1 Carbon G10/G11): removed at the buyer's request; the search is Mac-only now (2026-11-13)",
     "**MacBook Air 13\" M1 16/512** (MacRent, 5,580 ex): sold; the link now redirects to a new M5 and MacRent has no used MacBooks in stock. No M1 16/512 at refurbed, Inrego, TeknikFix or Reuseit either (2026-11-13)",
     "**MacBook Air 13\" M5, SE/UK keyboard** (refurbed mResell, 16,199 incl.): more expensive than a new M5 at the Black Week price (15,990), and the MACPAD8 code isn't enough reason to keep a refurbished one (2026-11-13)",
     "**MacBook Air 13\" M2 UK keyboard** (refurbed OKAMAC, 12,579 incl.): offer out of stock (2026-11-13)",
@@ -194,6 +103,7 @@
     "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster"
   ],
   "changes": [
+    "Removed all ThinkPads; now also tracking 15\" MacBook Airs (13 Nov)",
     "MacRent M1 16/512 sold; no other M1 16/512 found at company-buyable shops (13 Nov)",
     {
       "date": "2026-11-13",
@@ -466,9 +376,24 @@
         "pct": 60
       },
       {
-        "model": "ThinkPad X1 Carbon G10+ / X13 G3+",
-        "max": 4300,
-        "pct": null
+        "model": "MacBook Air 15\" M5 (used/refurbished)",
+        "max": 11200,
+        "pct": 97
+      },
+      {
+        "model": "MacBook Air 15\" M4",
+        "max": 10000,
+        "pct": 86
+      },
+      {
+        "model": "MacBook Air 15\" M3",
+        "max": 9300,
+        "pct": 80
+      },
+      {
+        "model": "MacBook Air 15\" M2",
+        "max": 8200,
+        "pct": 71
       }
     ]
   }
