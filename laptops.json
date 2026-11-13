@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-12",
-  "status": "Full recheck by hand: new M5 Air 15,990 at NetOnNet, Elgiganten, Komplett and Webhallen. refurbed has four MacBooks worth a look with code MACPAD8 (8% off), US/UK keyboards now allowed; margin scheme still to be checked in company mode. No new qualifying Tradera listings.",
+  "checked": "2026-11-13",
+  "status": "Re-checked refurbed, Reuseit, Inrego, TeknikFix, MacRent (category only), PriceRunner, Blocket and Tradera; refurbed M2 UK offer sold out, small refurbed price moves, new M5 Air still 15,990. Couldn't verify Inet (403) or the MacRent M1 Air item page; kept both.",
   "items": [
     {
       "id": "x13-g3-inet",
@@ -42,8 +42,8 @@
       "url": "https://www.refurbed.se/p/lenovo-x13-g3-i7-1265u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 6543,
-      "price_incl": 8179,
+      "price_ex": 6559,
+      "price_incl": 8199,
       "approx": true,
       "why": "**Backup X13 G3.** Swedish keyboard, fingerprint reader, 12-month warranty. Pricier than Inet's, but Inet's listing can't be re-checked automatically",
       "highlight": false,
@@ -57,8 +57,8 @@
       "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g10-i7-1255u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 6692,
-      "price_incl": 8365,
+      "price_ex": 6660,
+      "price_incl": 8325,
       "approx": true,
       "why": "**Backup Best ThinkPad.** Same G10 as Reuseit's with the cooler U-series i7, Swedish keyboard, 12-month warranty. ~920 kr more than Reuseit's",
       "highlight": false,
@@ -87,8 +87,8 @@
       "url": "https://www.refurbed.se/p/lenovo-carbon-x1-g11-i7-1355u/",
       "shop": "refurbed",
       "grade": "Bra",
-      "price_ex": 8471,
-      "price_incl": 10589,
+      "price_ex": 8396,
+      "price_incl": 10495,
       "approx": true,
       "why": "**Newest X1 Carbon.** 13th-gen U-series, Nordic keyboard (has å/ä/ö), 12-month warranty. Costs about the same as a used Mac, so only worth it if you want Windows",
       "highlight": false,
@@ -117,27 +117,12 @@
       "url": "https://www.refurbed.se/p/apple-macbook-pro-2021-m1-14/64073c/?offer=19874011",
       "shop": "refurbed (ExactSolutions, PL)",
       "grade": "Bra skick",
-      "price_incl": 9895,
-      "price_ex": 7916,
+      "price_incl": 9919,
+      "price_ex": 7935,
       "approx": true,
       "highlight": false,
       "pick": null,
       "why": "**Cheapest 14\" Pro.** 120 Hz mini-LED screen for ~4,000 kr less than the Inrego M2 Pro; ~9,100 with code MACPAD8. Heavier (~1.6 kg), older battery. Before ordering, switch to company mode: if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price."
-    },
-    {
-      "id": "mba-m2-uk-refurbed",
-      "kind": "mac",
-      "model": "MacBook Air 13\"",
-      "spec": "M2 · 16 GB · 512 GB · 2022 · UK keyboard",
-      "url": "https://www.refurbed.se/p/apple-macbook-air-m2-2022/170080c/?offer=20468454",
-      "shop": "refurbed (OKAMAC, FR)",
-      "grade": "Bra skick",
-      "price_incl": 12579,
-      "price_ex": 10063,
-      "approx": true,
-      "highlight": false,
-      "pick": null,
-      "why": "**UK-keyboard M2.** ~330 kr under the TeknikFix M2 before the code, ~1,100 under with MACPAD8 (~11,570). US layout is 36 kr more. Before ordering, switch to company mode: if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price."
     },
     {
       "id": "mba-m2-space-gray-teknikfix",
@@ -163,8 +148,8 @@
       "url": "https://www.refurbed.se/p/apple-macbook-pro-2023-m2-14/",
       "shop": "refurbed (Mac Store, NL)",
       "grade": "Bra skick",
-      "price_incl": 14239,
-      "price_ex": 11391,
+      "price_incl": 14125,
+      "price_ex": 11300,
       "approx": true,
       "highlight": false,
       "pick": null,
@@ -215,6 +200,7 @@
     "refurbed has an extra **8% off all MacBooks with code MACPAD8** (seen 12 Nov). Check that it still applies in company mode, and check each offer for the margin scheme there: refurbed prices here are list prices ÷ 1.25, which only holds if the seller invoices with moms."
   ],
   "dropped": [
+    "**MacBook Air 13\" M2 UK keyboard** (refurbed OKAMAC, 12,579 incl.): offer out of stock (2026-11-13)",
     "**MacBook Air 13\" M5, returned** (NetOnNet Fyndvara, 15,190): the only unit is in the Jönköping store, which doesn't ship it, and pickup there isn't possible (2026-11-12)",
     "**MacBook Air 13\" M5, German keyboard** (refurbed, 13,615): now sold under the margin scheme (\"inkl. marginalbeskattning\"), so there's no moms to reclaim and the company pays the full price (2026-11-12)",
     "**MacBook Air 13\" M5 Swedish keyboard** (refurbed, 16,199 incl.): a new one at NetOnNet's Black Week price is 209 kr cheaper, with full warranty (2026-11-12)",
@@ -233,10 +219,13 @@
     "**X13 G3 i5 480** (Inrego, 5,799) and **X13 G3 i7 480** (Inrego, 7,599): Inet's X13 G3 i7 512 is cheaper than both",
     "**T14s G2 i5/i7** (Inet), **T14s G3 i7** (Inrego, 6,399), **X13 G4** (Inrego, 6,799): the X1 Carbon G10 is lighter, has a better 14\" screen, and costs less than or about the same as each",
     "**X1 Yoga G8** (Inrego, 8,599): you'd be paying for touch and a 2-in-1 hinge you don't need",
-    "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster",
-    "**Reuseit L14 G3 64 GB / 1 TB** (7,999 ex): heavy budget model. **P15v / P15s**: 15\" workstations, too heavy"
+    "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster"
   ],
   "changes": [
+    {
+      "date": "2026-11-13",
+      "text": "refurbed M2 Air UK offer (12,579) is out of stock and was dropped. refurbed prices incl.: X13 G3 8,179 → 8,199, X1 Carbon G10 i7 8,365 → 8,325, G11 10,589 → 10,495, M1 Pro 14\" 9,895 → 9,919, M2 Pro US 14,239 → 14,125. Tradera M1 Pro 14\" bid is now 6,700, over the ceiling. New M5 Air still 15,990 at NetOnNet/Elgiganten/Komplett; no new qualifying Tradera listings. Couldn't verify Inet or the MacRent item page."
+    },
     {
       "date": "2026-11-12",
       "text": "Added four refurbed MacBooks (14\" M1 Pro 9,895, M2 Air UK 12,579, 14\" M2 Pro US 14,239, M5 Air 16,199; all 8% off with MACPAD8). US/UK keyboards now count. Elgiganten and Komplett also match 15,990 for a new M5."
@@ -299,7 +288,7 @@
     }
   ],
   "private": {
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
       {
@@ -341,9 +330,9 @@
         "site": "Tradera",
         "where": "Auction, ends 17 Nov 17:38",
         "price": null,
-        "price_label": "6,354 kr bid (6,674 with buyer protection)",
+        "price_label": "6,700 kr bid (7,037 with buyer protection)",
         "why": "**Watch.** The bigger, better 120 Hz screen. **Bid ceiling ~6,650 kr** (~7,000 with buyer protection): similar ones sell for 7,500–9,500, but this one comes without a charger and has cosmetic wear.",
-        "flag": "\"Okej\" condition: sticker marks on the lid, one bottom screw missing. **Computer only, no charger** (~600–900 kr extra). Battery health and keyboard layout not stated, so ask before bidding. Heavier (~1.6 kg)"
+        "flag": "\"Okej\" condition: sticker marks on the lid, one bottom screw missing. **Computer only, no charger** (~600–900 kr extra). Battery health and keyboard layout not stated, so ask before bidding. Heavier (~1.6 kg) Bid is now over the ceiling."
       },
       {
         "model": "MacBook Air 13\" M5",
@@ -443,7 +432,7 @@
       ]
     }
   },
-  "checked_at": "07:07",
+  "checked_at": "07:15",
   "strong_buy": {
     "floor_incl": 14500,
     "floor_ex": 11600,
