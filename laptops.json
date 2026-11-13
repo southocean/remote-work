@@ -95,21 +95,6 @@
       "pick": null
     },
     {
-      "id": "mba-m1-512-macrent",
-      "kind": "mac",
-      "model": "MacBook Air 13\"",
-      "spec": "M1 · 16 GB · 512 GB · 2020 · Space Gray",
-      "url": "https://www.macrent.se/begagnat/begagnad-macbook/macbook-air-13-tum-m1-chip-8-core-grafik-8-core-16gb-ram-512gb-ssd-rymdgra-mgn73ks-a-16gb-b9998/2840472837/",
-      "shop": "MacRent",
-      "grade": "Anmärkning finns",
-      "price_ex": 5580,
-      "price_incl": 6975,
-      "why": "**Cheapest Mac.** Campaign price from a business seller (ex moms shown). Battery 85% after 309 cycles; small dent on one edge. Older chip, no battery guarantee",
-      "highlight": false,
-      "pick": null,
-      "approx": false
-    },
-    {
       "id": "mbp14-m1pro-refurbed",
       "kind": "mac",
       "model": "MacBook Pro 14\"",
@@ -185,6 +170,7 @@
     "refurbed has an extra **8% off all MacBooks with code MACPAD8** (seen 12 Nov). Check that it still applies in company mode, and check each offer for the margin scheme there: refurbed prices here are list prices ÷ 1.25, which only holds if the seller invoices with moms."
   ],
   "dropped": [
+    "**MacBook Air 13\" M1 16/512** (MacRent, 5,580 ex): sold; the link now redirects to a new M5 and MacRent has no used MacBooks in stock. No M1 16/512 at refurbed, Inrego, TeknikFix or Reuseit either (2026-11-13)",
     "**MacBook Air 13\" M5, SE/UK keyboard** (refurbed mResell, 16,199 incl.): more expensive than a new M5 at the Black Week price (15,990), and the MACPAD8 code isn't enough reason to keep a refurbished one (2026-11-13)",
     "**MacBook Air 13\" M2 UK keyboard** (refurbed OKAMAC, 12,579 incl.): offer out of stock (2026-11-13)",
     "**MacBook Air 13\" M5, returned** (NetOnNet Fyndvara, 15,190): the only unit is in the Jönköping store, which doesn't ship it, and pickup there isn't possible (2026-11-12)",
@@ -208,6 +194,7 @@
     "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster"
   ],
   "changes": [
+    "MacRent M1 16/512 sold; no other M1 16/512 found at company-buyable shops (13 Nov)",
     {
       "date": "2026-11-13",
       "text": "Hourly deal: Tradera M1 Pro 14\" 16/512, 90% battery, bid 5,250 (5,515 with buyer protection), ends 16 Nov 20:21."
