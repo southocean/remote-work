@@ -100,6 +100,16 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - https://www.tradera.com/search?q=macbook%20air%20m3&sortBy=AddedOn
      - https://www.tradera.com/search?q=macbook%20air%20m2%2016gb&sortBy=AddedOn
      - https://www.tradera.com/search?q=macbook%20pro%2014%20m1%20pro&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20pro%2014%20m2%20pro&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20air%2024gb&sortBy=AddedOn
+     - https://www.tradera.com/search?q=macbook%20air%2016gb%20512&sortBy=AddedOn
+
+     **Also scan Blocket** the same way (item links look like `/recommerce/forsale/item/<id>`; the search pages are plain HTML):
+     - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%20m5&sort=PUBLISHED_DESC
+     - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%20m4&sort=PUBLISHED_DESC
+     - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%20m3&sort=PUBLISHED_DESC
+     - https://www.blocket.se/recommerce/forsale/search?q=macbook%20air%20m2%2016gb&sort=PUBLISHED_DESC
+     - https://www.blocket.se/recommerce/forsale/search?q=macbook%20pro%2014&sort=PUBLISHED_DESC
 
      Only look at item links in the laptop category (`/item/302393/…`). Skip any URL already in `private.items`, or whose model and price already appear in `private.skipped`. Open each remaining listing and read its title, description, price, and whether it's "Köp nu" (fixed price) or an auction ("Ledande bud", "Slutar …").
 
@@ -107,12 +117,16 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
      - 13" MacBook Air (M2 or newer) or 14" MacBook Pro (M1 Pro or newer). No 15"/16", no Intel.
      - **16 GB RAM or more and 512 GB storage or more**, stated in the title or description. If either isn't stated, skip it.
      - Keyboard is Nordic, US or UK English (or not stated). Skip DE, FR and other layouts. Not "defekt", "trasig", "för delar", "iCloud-låst", or a box/accessory only.
-     - Price at or under the strong-buy price for its model. For "Köp nu", use the buy-now price. For an auction, use the current bid, and only if it **ends within 48 hours**.
+     - Price at or under the **watch price** for its model (table in **Price floor and strong-buy prices**). For "Köp nu" or Blocket, use the asking price. For an auction, use the **current bid plus buyer protection**, whatever its end time: the list tracks the bid every day, so a good auction should be on it from the day it appears, not only in its last 48 hours.
 
-     Use the strong-buy prices in **Price floor and strong-buy prices** below. A private seller can't give a moms invoice, so compare the full price.
+     A private seller can't give a moms invoice, so compare the full price. **Don't filter out good listings for being slightly above the strong-buy price**: the buyer wants every good option on the list and decides for themselves.
 
-     Add each qualifying listing to `private.items`, with `site` "Tradera" and `where` set to the seller's town, plus "auction, ends D Mon HH:MM" or "Köp nu". Fixed price → `price`. Auction → `price: null` and `price_label` "X kr bid (Y with buyer protection)". `why` starts with "**New on Tradera.**", then one short sentence on condition and battery from the ad. Its `flag` says what to check (keyboard, battery, warranty, and for auctions: "Final price will climb; strong-buy price X"). Add it to `changes` and send a **PushNotification**: "Tradera: <model> for <price> kr (<Köp nu / auction ends …>). <url>". Keep at most 8 items in `private.items`; if there are more, remove the oldest Tradera ones first.
-     If the searches can't be loaded, say "couldn't scan Tradera" in `status`.
+     Two tiers:
+     - **At or under the strong-buy price:** `why` starts with "**Strong buy.**", send the PushNotification below.
+     - **Between strong-buy and watch price:** `why` starts with "**Worth watching.**", no push. For auctions, write a bid ceiling in the `flag` ("Ceiling: X kr incl. buyer protection", using the watch price).
+
+     Add each qualifying listing to `private.items`, with `site` "Tradera" and `where` set to the seller's town, plus "auction, ends D Mon HH:MM" or "Köp nu". Fixed price → `price`. Auction → `price: null` and `price_label` "X kr bid (Y with buyer protection)". `why` starts with "**New on Tradera.**", then one short sentence on condition and battery from the ad. Its `flag` says what to check (keyboard, battery, warranty, and for auctions: "Final price will climb; strong-buy price X"). Add it to `changes`. For strong buys, send a **PushNotification**: "Tradera: <model> for <price> kr (<Köp nu / auction ends …>). <url>". Keep at most 12 items in `private.items`; if there are more, remove the weakest "Worth watching" ones first (highest price relative to its watch price).
+     If the searches can't be loaded, say "couldn't scan Tradera" or "couldn't scan Blocket" in `status`. Facebook Marketplace needs a login, so it can't be scanned; many of its MacBook ads are Tradera auctions anyway.
 7. **Bookkeeping:**
    - `checked` = today's date in Europe/Stockholm (YYYY-MM-DD).
    - `checked_at` = the time you finished, in Europe/Stockholm (HH:MM). **Update it on every run, even when nothing else changed**, so the page shows the routine is alive.
@@ -138,16 +152,16 @@ Round ex-moms prices to whole kronor and set `"approx": true` when you derived t
 
 The buyer's **price floor is a new MacBook Air 13" M5 16/512 at 14,500 kr incl. moms (11,600 ex)**. Second-hand only makes sense below that, so a used machine is a **strong buy** at or under these prices. **Company cost** = the ex-moms price from a shop that invoices with moms, or the **full price** from a private seller or a margin-scheme offer (no moms to reclaim).
 
-| Model (16 GB / 512 GB+) | Strong buy at or below (company cost) |
-|---|---|
-| MacBook Air 13" M5, used or refurbished | 10,400 |
-| MacBook Air 13" M4 | 9,300 |
-| MacBook Air 13" M3 | 8,700 |
-| MacBook Air 13" M2 | 7,600 |
-| MacBook Pro 14" M1 Pro or M2 Pro | 7,000 |
-| ThinkPad X1 Carbon G10+ / X13 G3+ (16 GB / 480 GB+) | 4,300 |
+| Model (16 GB / 512 GB+) | Strong buy at or below (company cost) | Watch price: list it at or below |
+|---|---|---|
+| MacBook Air 13" M5, used or refurbished | 10,400 | 12,000 |
+| MacBook Air 13" M4 | 9,300 | 11,000 |
+| MacBook Air 13" M3 | 8,700 | 9,800 |
+| MacBook Air 13" M2 | 7,600 | 8,500 |
+| MacBook Pro 14" M1 Pro or M2 Pro | 7,000 | 8,500 |
+| ThinkPad X1 Carbon G10+ / X13 G3+ (16 GB / 480 GB+) | 4,300 | 5,500 |
 
-These numbers are also in `strong_buy` in laptops.json, which the page shows. Only the buyer changes them.
+The strong-buy numbers are also in `strong_buy` in laptops.json, which the page shows. Watch prices sit roughly halfway between strong buy and what a new M5 costs the company; anything above them loses to buying new. Only the buyer changes either column.
 
 ## Hourly deal watch (weekdays, daytime)
 
@@ -160,7 +174,7 @@ A second, lighter routine runs **every hour on weekdays during the day** with th
    - **New MacBook Air 13" M5 16/512** at a company-buyable shop (PriceRunner pages in step 5): **≤ 14,990 kr incl.** At ≤ 14,500 the floor is reached; say "Floor reached: buy new" in its `why`.
 
    Use the shop URLs in **Sources**. The hard requirements still apply (keyboard: Nordic, US or UK; in stock; 13–14"), except that a margin-scheme offer may qualify if its **full price** is at or under the strong-buy price. On refurbed, check each product page's keyboard options for the cheapest acceptable layout.
-2. **Shop deals** go into `items` with `pick` "Deal alert", `highlight` true, a `why` starting with "**Deal alert.**", and `found_at` "YYYY-MM-DD HH:MM" (Europe/Stockholm). **Tradera finds** go into `private.items` as described in step 6, also with `found_at`.
+2. **Shop deals** go into `items` with `pick` "Deal alert", `highlight` true, a `why` starting with "**Deal alert.**", and `found_at` "YYYY-MM-DD HH:MM" (Europe/Stockholm). **Tradera and Blocket finds** go into `private.items` as described in step 6, also with `found_at`, but in the hourly run add **strong buys only**; the daily run adds the "Worth watching" tier.
 3. Skip anything whose URL is already in `items`, `private.items`, `dropped` or `private.skipped`. Never re-add something that was dropped.
 4. **If you added something:** add one line to the front of `changes`, validate the JSON, commit with the message `Hourly deal: <model> <price>` and push (on rejection, `git pull --rebase` and push again). Also send a **PushNotification** with the model, price and URL.
 5. **If you found nothing, change nothing and don't commit.** No status updates, no `checked_at`: the daily run handles bookkeeping.

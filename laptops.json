@@ -208,6 +208,7 @@
     "**Other Reuseit X1 Carbon G10s** (5,279–5,759 ex): \"Okej\" or \"Bra\" grade, or P-series chips (i7-1260P/1270P) that run hotter and drain the battery faster"
   ],
   "changes": [
+    "Tradera: M4 Air 24/512, 10 cycles, bid 10,000 (ends 15 Nov). Routine now also scans Blocket and lists \"worth watching\" listings, not only strong buys (13 Nov)",
     {
       "date": "2026-11-13",
       "text": "refurbed M2 Air UK offer (12,579) is out of stock and was dropped. refurbed prices incl.: X13 G3 8,179 → 8,199, X1 Carbon G10 i7 8,365 → 8,325, G11 10,589 → 10,495, M1 Pro 14\" 9,895 → 9,919, M2 Pro US 14,239 → 14,125. Tradera M1 Pro 14\" bid is now 6,700, over the ceiling. New M5 Air still 15,990 at NetOnNet/Elgiganten/Komplett; no new qualifying Tradera listings. Couldn't verify Inet or the MacRent item page."
@@ -277,6 +278,18 @@
     "checked": "2026-11-13",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
+      {
+        "model": "MacBook Air 13\" M4",
+        "spec": "24 GB · 512 GB · Midnight · 10 battery cycles",
+        "url": "https://www.tradera.com/item/302393/760736952/macbook-air-13-tum-m4-24-gb-ram-512gb-ssd",
+        "site": "Tradera",
+        "where": "Malmberget · auction, ends 15 Nov 12:37 · ships from 59 kr",
+        "price": null,
+        "price_label": "10,000 kr bid (10,499 with buyer protection)",
+        "why": "**Worth watching.** As new: 100% battery, 10 cycles, 24 GB RAM (more than the 16 GB we require). Bought refurbished \"Nyskick\" from mResell on 31 Jul 2026. Seller has 16 reviews, all 5.0.",
+        "flag": "**Ceiling: ~11,000 kr incl. buyer protection** (bid ~10,450). That's still ~1,800 under a new M5 for the company (12,792 ex). Ask the seller for the mResell receipt (its 12-month warranty may transfer) and the keyboard layout. Final price will climb.",
+        "found_at": "2026-11-13 10:40"
+      },
       {
         "model": "MacBook Air 13\" M3",
         "spec": "16 GB · 512 GB · Midnight",
