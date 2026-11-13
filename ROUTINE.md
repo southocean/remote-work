@@ -20,6 +20,7 @@ Instructions for the cloud routine that runs every morning. It keeps the Laptop 
    - Exclude marketplaces where the seller is unknown (OnBuy, Amazon, CDON, Fyndiq, Blocket, Tradera, Back Market). **refurbed.se is allowed.** Its checkout has a Företag option asking for a momsreg nr and shows the "Netto" price. Record the named seller (e.g. Janado) and the country it ships from in `shop`, e.g. "refurbed (Janado, DE)". Sellers can switch an offer to the margin scheme: if the price shows "inkl. marginalbeskattning" (in company mode too), it fails this requirement.
 4. **In stock or orderable.** "Slut i lager" means it's gone.
 5. **Light enough to travel:** 13–14" only. No 15–16", no workstations (P-series), no L-series.
+6. **Used or refurbished must be cheaper than new.** If its listed price (incl. moms) is at or above the new reference in `new_reference` for the same model and spec, drop it. Discount codes (e.g. MACPAD8) don't count, because they aren't guaranteed at checkout.
 
 ## Families worth tracking
 

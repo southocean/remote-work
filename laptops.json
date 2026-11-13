@@ -169,21 +169,6 @@
       "highlight": true,
       "pick": null,
       "approx": true
-    },
-    {
-      "id": "mba-m5-refurbed-mresell",
-      "kind": "mac",
-      "model": "MacBook Air 13\" M5",
-      "spec": "M5 · 16 GB · 512 GB · 2026 · SE or UK keyboard · new battery",
-      "url": "https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/417982/?offer=20559554",
-      "shop": "refurbed (mResell, SE)",
-      "grade": "Nyskick",
-      "price_incl": 16199,
-      "price_ex": 12959,
-      "approx": true,
-      "highlight": false,
-      "pick": null,
-      "why": "**M5 with the code.** Same Swedish reseller as the Tradera M5. Above new at list price, but ~14,900 with MACPAD8 (~11,920 ex), ~870 kr under new. Before ordering, switch to company mode: if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price."
     }
   ],
   "new_reference": {
@@ -200,6 +185,7 @@
     "refurbed has an extra **8% off all MacBooks with code MACPAD8** (seen 12 Nov). Check that it still applies in company mode, and check each offer for the margin scheme there: refurbed prices here are list prices ÷ 1.25, which only holds if the seller invoices with moms."
   ],
   "dropped": [
+    "**MacBook Air 13\" M5, SE/UK keyboard** (refurbed mResell, 16,199 incl.): more expensive than a new M5 at the Black Week price (15,990), and the MACPAD8 code isn't enough reason to keep a refurbished one (2026-11-13)",
     "**MacBook Air 13\" M2 UK keyboard** (refurbed OKAMAC, 12,579 incl.): offer out of stock (2026-11-13)",
     "**MacBook Air 13\" M5, returned** (NetOnNet Fyndvara, 15,190): the only unit is in the Jönköping store, which doesn't ship it, and pickup there isn't possible (2026-11-12)",
     "**MacBook Air 13\" M5, German keyboard** (refurbed, 13,615): now sold under the margin scheme (\"inkl. marginalbeskattning\"), so there's no moms to reclaim and the company pays the full price (2026-11-12)",
