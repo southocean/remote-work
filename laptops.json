@@ -136,6 +136,10 @@
   "changes": [
     {
       "date": "2026-11-18",
+      "text": "Hourly deal: Tradera M2 Air 16/512 auction at 6,000 kr bid (6,302 with protection), ends 22 Nov 16:59."
+    },
+    {
+      "date": "2026-11-18",
       "text": "Strong buys: MacRent M2 Air 16/512 ×2 at 7,200 ex (90%/89% battery) and Tradera M1 Pro 16/512 auction at 5,500 bid (ends 21 Nov). Added Reuseit M2 Pro 14\" at 11,599 ex (Swedish keyboard, 2-year warranty); Inrego M2 Pro dropped. refurbed M1 Pro 10,599 → 9,995 incl. Tradera M3 Air and M1 Pro auctions ended. New M5 Air still 15,990; no Black Week alert."
     },
     {
@@ -222,6 +226,18 @@
     "checked": "2026-11-18",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
+      {
+        "model": "MacBook Air 13\" M2",
+        "spec": "16 GB · 512 GB · 94% battery · Swedish keyboard · Touch ID",
+        "url": "https://www.tradera.com/item/302393/761861702/x",
+        "site": "Tradera",
+        "where": "Auction, ends 22 Nov 16:59",
+        "price": null,
+        "price_label": "6,000 kr bid (6,302 with buyer protection)",
+        "why": "**Strong buy.** New on Tradera: M2 Air 16/512 with Swedish keyboard, 94% battery, small scratches, bought new Aug 2023. Bid is 6,000, under the 7,600 strong-buy price.",
+        "flag": "Final price will climb; strong-buy price 7,600, so bid ceiling ~7,250 plus protection. No original box. Check seller location, cosmetics and warranty.",
+        "found_at": "2026-11-18 10:10"
+      },
       {
         "model": "MacBook Pro 14\" M1 Pro",
         "spec": "16 GB · 512 GB · 90% battery · Swedish keyboard · notch screen",
