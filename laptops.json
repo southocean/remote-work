@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-21",
-  "status": "TeknikFix M2 Air unchanged; refurbed M1 Pro fell to 9,705 and the M5 Air offer is now 15,299 (German 13,575 gone); Inrego M2 Pro re-added at 11,999 ex. New M5 Air still 15,990 (no Black Week alert). Re-checked Blocket (one M4 Air sold); couldn't scan or verify Tradera (blocked), Inet and NetOnNet Fyndvaror (403); Reuseit, Inrego, TeknikFix and MacRent scanned with nothing else qualifying.",
+  "checked": "2026-11-22",
+  "status": "refurbed M1 Pro rose 9,705 → 10,609 incl. (now Grade C); other shop items and new M5 Air (15,990) unchanged. Blocket re-checked (both items live), nothing new qualifying; couldn't scan or verify Tradera (blocked), Inet and NetOnNet Fyndvaror, or load MacRent/Inrego product lists (JS-only), so those items are kept as they were.",
   "items": [
     {
       "id": "mba-m2-space-gray-teknikfix",
@@ -25,13 +25,13 @@
       "spec": "M5 · 16 GB · 512 GB · 2026 · Swedish or US keyboard (page default)",
       "url": "https://www.refurbed.se/p/apple-macbook-air-13-m5-2026/",
       "shop": "refurbed (seller not checked)",
-      "grade": "Page default (grade not confirmed)",
+      "grade": "Grade B (silver, Swedish keyboard)",
       "price_incl": 15299,
       "price_ex": 12239,
       "approx": true,
       "highlight": true,
       "pick": "Best long-term Mac",
-      "why": "**Best long-term Mac.** Refurbished M5 Air 16/512 at 15,299 incl., 691 kr under a new one at the Black Week price (15,990), with refurbed's 12-month warranty. The German-keyboard offer at 13,575 is no longer shown; the page default is now this one, at a Swedish or US layout. Grade, seller and moms status weren't confirmed: switch to company mode and if the price says \"inkl. marginalbeskattning\" there is no moms to reclaim, so skip it. Above the 12,000 watch price, so only worth it for the warranty.",
+      "why": "**Best long-term Mac.** Refurbished M5 Air 16/512 at 15,299 incl., 691 kr under a new one at the Black Week price (15,990), with refurbed's 12-month warranty. The German-keyboard offer at 13,575 is no longer shown; the page default is now this one, at a Swedish or US layout. The page default is Grade B; seller and moms status weren't confirmed. A Grade A sky-blue one is 14,859 but has a German keyboard (only 440 kr cheaper, so not allowed): switch to company mode and if the price says \"inkl. marginalbeskattning\" there is no moms to reclaim, so skip it. Above the 12,000 watch price, so only worth it for the warranty.",
       "pick_text": "Refurbished M5 Air 16/512 at ~12,239 ex moms, about 550 kr under new. Confirm grade and moms invoice in company mode first."
     },
     {
@@ -41,13 +41,13 @@
       "spec": "M1 Pro · 16 GB · 512 GB · 2021 · US keyboard",
       "url": "https://www.refurbed.se/p/apple-macbook-pro-2021-m1-14/64073c/",
       "shop": "refurbed",
-      "grade": "Bra skick",
-      "price_incl": 9705,
-      "price_ex": 7764,
+      "grade": "Grade C (page default)",
+      "price_incl": 10609,
+      "price_ex": 8487,
       "approx": true,
       "highlight": true,
       "pick": "Best screen Mac",
-      "why": "**Best screen Mac.** Also the cheapest Mac on the list. 120 Hz mini-LED screen, M1 Pro, 9,705 incl. (was 10,549). US keyboard (default layout). Heavier (~1.6 kg), older battery. Seller wasn't re-checked: before ordering, switch to company mode and if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price.",
+      "why": "**Best screen Mac.** Also the cheapest Mac on the list. 120 Hz mini-LED screen, M1 Pro, 10,609 incl. (was 9,705; page default is now Grade C). US keyboard (default layout). Heavier (~1.6 kg), older battery. Seller wasn't re-checked: before ordering, switch to company mode and if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price.",
       "pick_text": "Cheapest 14\" Pro that fits: M1 Pro 16/512 with a 120 Hz screen, 12-month warranty and US keyboard."
     },
     {
@@ -117,6 +117,10 @@
     "**X1 Carbon G10 i7-1255U, non-touch** (Reuseit, 5,999): sold out (2026-11-07); the i7-1265U touch G10 at the same price replaces it"
   ],
   "changes": [
+    {
+      "date": "2026-11-22",
+      "text": "refurbed M1 Pro 14\" 9,705 → 10,609 incl. (default offer now Grade C). Other shop prices unchanged; new M5 Air still 15,990. Blocket items still listed, no new qualifying Blocket ads. Tradera, Inet, NetOnNet Fyndvaror not verifiable; MacRent and Inrego lists didn't load."
+    },
     {
       "date": "2026-11-21",
       "text": "refurbed M1 Pro 10,549 → 9,705 incl.; M2 Pro US 14,279 → 14,485. refurbed M5 Air German-keyboard offer (13,575) is gone; default offer is now 15,299 incl. Re-added Inrego M2 Pro 14\" at 14,999 incl. (11,999 ex). Blocket M4 Air (11,000) sold. Tradera not scannable, auctions not re-checked. New M5 Air still 15,990."
@@ -218,7 +222,7 @@
     }
   ],
   "private": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
       {
@@ -278,6 +282,7 @@
       }
     ],
     "skipped": [
+      "**22 Nov Blocket scan:** nothing new at or under a watch price with 16 GB / 512 GB stated (closest: M3 Air 16/512 at 9,990, over the 9,800 watch price; M1 Pro 16/512 at 8,900 and 9,600, over 8,500). Tradera couldn't be scanned (blocked)",
       "**MacBook Air 13\" M4 16/512** (Blocket, 11,000, Västerås): sold (21 Nov)",
       "**21 Nov Blocket scan:** nothing new at or under a watch price with 16 GB / 512 GB stated (closest: M3 Air 16/512 at 9,990, 190 over the 9,800 watch price; M1 Pro 16/512 at 8,900, over 8,500). Tradera couldn't be scanned (blocked)",
       "**MacBook Pro 14\" M2 Pro** (Blocket, 8,390, Älvsjö): listing removed (20 Nov)",
@@ -381,7 +386,7 @@
       ]
     }
   },
-  "checked_at": "07:04",
+  "checked_at": "07:20",
   "strong_buy": {
     "floor_incl": 14500,
     "floor_ex": 11600,
