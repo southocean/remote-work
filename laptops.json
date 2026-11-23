@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-22",
-  "status": "refurbed M1 Pro rose 9,705 → 10,609 incl. (now Grade C); other shop items and new M5 Air (15,990) unchanged. Blocket re-checked (both items live), nothing new qualifying; couldn't scan or verify Tradera (blocked), Inet and NetOnNet Fyndvaror, or load MacRent/Inrego product lists (JS-only), so those items are kept as they were.",
+  "checked": "2026-11-23",
+  "status": "refurbed M2 Pro rose to 15,385 incl.; TeknikFix, Inrego, refurbed M5/M1 Pro and new M5 Air (15,990) unchanged. Blocket re-checked: added an M1 Pro at 8,500, both older items still live. Couldn't scan or verify Tradera (blocked, so two ended auctions were removed), Inet, NetOnNet Fyndvaror, MacRent or Reuseit's full list (Reuseit shows only 8 GB M1 Airs).",
   "items": [
     {
       "id": "mba-m2-space-gray-teknikfix",
@@ -47,23 +47,23 @@
       "approx": true,
       "highlight": true,
       "pick": "Best screen Mac",
-      "why": "**Best screen Mac.** Also the cheapest Mac on the list. 120 Hz mini-LED screen, M1 Pro, 10,609 incl. (was 9,705; page default is now Grade C). US keyboard (default layout). Heavier (~1.6 kg), older battery. Seller wasn't re-checked: before ordering, switch to company mode and if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price.",
+      "why": "**Best screen Mac.** Also the cheapest Mac on the list. 120 Hz mini-LED screen, M1 Pro, 10,609 incl. (page default is Grade C). US keyboard (default layout). Heavier (~1.6 kg), older battery. Seller wasn't re-checked: before ordering, switch to company mode and if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price.",
       "pick_text": "Cheapest 14\" Pro that fits: M1 Pro 16/512 with a 120 Hz screen, 12-month warranty and US keyboard."
     },
     {
       "id": "mbp14-m2pro-us-refurbed",
       "kind": "mac",
       "model": "MacBook Pro 14\"",
-      "spec": "M2 Pro · 16 GB · 512 GB · 2023 · US keyboard",
+      "spec": "M2 Pro · 16 GB · 512 GB · 2023 · keyboard layout to confirm",
       "url": "https://www.refurbed.se/p/apple-macbook-pro-2023-m2-14/",
       "shop": "refurbed (Mac Store, NL)",
       "grade": "Bra skick",
-      "price_incl": 14485,
-      "price_ex": 11588,
+      "price_incl": 15385,
+      "price_ex": 12308,
       "approx": true,
       "highlight": false,
       "pick": null,
-      "why": "**M2 Pro, US keyboard.** Page default now shows 14,485 incl. (was 14,279; the Swedish layout is +904). Seller not re-checked. Before ordering, switch to company mode: if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price."
+      "why": "**M2 Pro, refurbed.** Page default now shows 15,385 incl. (was 14,485), so it is 386 kr above Inrego's Swedish-keyboard M2 Pro. Keyboard layout of the current default offer wasn't confirmed (US was the earlier default; Swedish costs more). Seller not re-checked. Before ordering, switch to company mode: if the price says \"inkl. marginalbeskattning\", there is no moms to reclaim and the company pays the full price."
     },
     {
       "id": "mbp14-m2pro-inrego",
@@ -87,7 +87,7 @@
     "price_incl": 15990,
     "shop": "NetOnNet / Elgiganten / Komplett (Black Week, was 16,990)",
     "url": "https://www.netonnet.se/art/dator-surfplatta/laptop/laptop-12-14-tum/apple-13-inch-macbook-air-m5-chip-10core-cpu-8core-gpu-16gb-ram-512gb-ssd-midnight/1064530.8906/",
-    "note": "Black Week price in all four colours at NetOnNet, Elgiganten and Komplett (PriceRunner, 21 Nov); Starlight is 17,990 at Komplett. Inet 16,490, MacRent 17,995. Still above the 14,990 alert threshold. Check the price holds in Företag mode before ordering. Amazon/CDON/e-ville show lower but can't sell ex moms.",
+    "note": "Black Week price unchanged in all four colours at NetOnNet, Elgiganten and Komplett (PriceRunner, 2026-11-23); Starlight is 17,990 at Komplett. Inet 16,490, MacRent 17,995. Still above the 14,990 alert threshold. Check the price holds in Företag mode before ordering. Amazon (14,990), CDON/e-ville show lower but can't sell ex moms.",
     "approx": true
   },
   "notes": [
@@ -117,6 +117,10 @@
     "**X1 Carbon G10 i7-1255U, non-touch** (Reuseit, 5,999): sold out (2026-11-07); the i7-1265U touch G10 at the same price replaces it"
   ],
   "changes": [
+    {
+      "date": "2026-11-23",
+      "text": "Refurbed M2 Pro 14\" rose 14,485 → 15,385 incl. (12,308 ex). Added Blocket M1 Pro 14\" 16/512 at 8,500 (Söderköping, worth watching). Removed the two Tradera auctions that have ended (final prices not verifiable). Other shop prices and new M5 Air (15,990) unchanged."
+    },
     {
       "date": "2026-11-22",
       "text": "refurbed M1 Pro 14\" 9,705 → 10,609 incl. (default offer now Grade C). Other shop prices unchanged; new M5 Air still 15,990. Blocket items still listed, no new qualifying Blocket ads. Tradera, Inet, NetOnNet Fyndvaror not verifiable; MacRent and Inrego lists didn't load."
@@ -222,33 +226,9 @@
     }
   ],
   "private": {
-    "checked": "2026-11-22",
+    "checked": "2026-11-23",
     "note": "Private sellers can't give a moms invoice, so the company pays the full price. Compare it with the shop prices **ex moms** above: anything over ~13,600 kr loses to a new M5 Air bought through the company.",
     "items": [
-      {
-        "model": "MacBook Air 13\" M2",
-        "spec": "16 GB · 512 GB · 94% battery · Swedish keyboard · Touch ID",
-        "url": "https://www.tradera.com/item/302393/761861702/x",
-        "site": "Tradera",
-        "where": "Auction, ends 22 Nov 16:59",
-        "price": null,
-        "price_label": "6,250 kr bid (6,565 with buyer protection)",
-        "why": "**Strong buy.** New on Tradera: M2 Air 16/512 with Swedish keyboard, 94% battery, small scratches, bought new Aug 2023. Bid is 6,000, under the 7,600 strong-buy price.",
-        "flag": "Final price will climb; strong-buy price 7,600, so bid ceiling ~7,250 plus protection. No original box. Check seller location, cosmetics and warranty.",
-        "found_at": "2026-11-18 10:10"
-      },
-      {
-        "model": "MacBook Pro 14\" M1 Pro",
-        "spec": "16 GB · 512 GB · 90% battery · Swedish keyboard · notch screen",
-        "url": "https://www.tradera.com/item/302393/761929893/x",
-        "site": "Tradera",
-        "where": "Auction, ends 21 Nov 21:52 · Järfälla (can meet up)",
-        "price": null,
-        "price_label": "5,500 kr bid (5,777 with buyer protection)",
-        "why": "**Strong buy.** New on Tradera: M1 Pro 16/512 with Swedish keyboard, 90% battery, reset and unlocked. Bid is 5,500, far under the 7,000 strong-buy price.",
-        "flag": "**No charger** (~600–900 kr extra). Final price will climb; strong-buy price 7,000, so bid ceiling ~6,650 plus protection. Only 1 bid so far. Check cosmetic condition before bidding.",
-        "found_at": "2026-11-18 07:15"
-      },
       {
         "model": "MacBook Pro 14\" M1 Pro",
         "spec": "16 GB · 512 GB · 8-core CPU · 87% battery health",
@@ -271,6 +251,16 @@
         "flag": "Small paint chip on one corner. ~850 kr above the ~10,650 sold median, so worth offering ~10,800"
       },
       {
+        "model": "MacBook Pro 14\" M1 Pro",
+        "spec": "16 GB · 512 GB · 84% battery (385 cycles) · Space Gray · box and MagSafe charger",
+        "url": "https://www.blocket.se/recommerce/forsale/item/28139691",
+        "site": "Blocket",
+        "where": "Söderköping · Köp nu (shipping free + buyer protection 330 kr)",
+        "price": 8500,
+        "why": "**Worth watching.** New on the list: M1 Pro 14\" 16/512, \"Bra skick\", no scratches on screen or case apart from tiny ones on the logo, bought Nov 2021. Exactly at the 8,500 watch price (strong buy is 7,000).",
+        "flag": "Keyboard layout not stated, so ask. 84% battery. Private seller, no moms invoice. Cheaper Blocket M1 Pro at 7,000 (Hägersten) is on the list above."
+      },
+      {
         "model": "MacBook Air 13\" M5",
         "spec": "16 GB · 512 GB · 2026 · Grade A",
         "url": "https://www.tradera.com/item/302393/738474893/macbook-air-13-m5-2026-apple-m5-10-core-8-core-gpu-16-gb-ram-512-gb-ssd-grade-a",
@@ -282,6 +272,9 @@
       }
     ],
     "skipped": [
+      "**MacBook Air 13\" M2 16/512** (Tradera, 6,250 bid, ended 22 Nov 16:59): auction has ended; final price not verified because Tradera blocks fetches. Removed",
+      "**MacBook Pro 14\" M1 Pro 16/512, no charger** (Tradera, 5,500 bid, ended 21 Nov 21:52): auction has ended; final price not verified (Tradera blocked). Removed",
+      "**23 Nov Blocket scan:** besides the M1 Pro at 8,500 now listed, nothing qualifies. M1 Pro 14\" at 7,200 (Uppsala, 82% battery) says \"M1\" with no Pro, so unclear; M3 Air 16/512 9,990 is over the 9,800 watch price; M3 Air at 7,999 and M2 Air at 6,900 are 8 GB. Tradera couldn't be scanned (blocked)",
       "**22 Nov Blocket scan:** nothing new at or under a watch price with 16 GB / 512 GB stated (closest: M3 Air 16/512 at 9,990, over the 9,800 watch price; M1 Pro 16/512 at 8,900 and 9,600, over 8,500). Tradera couldn't be scanned (blocked)",
       "**MacBook Air 13\" M4 16/512** (Blocket, 11,000, Västerås): sold (21 Nov)",
       "**21 Nov Blocket scan:** nothing new at or under a watch price with 16 GB / 512 GB stated (closest: M3 Air 16/512 at 9,990, 190 over the 9,800 watch price; M1 Pro 16/512 at 8,900, over 8,500). Tradera couldn't be scanned (blocked)",
@@ -386,7 +379,7 @@
       ]
     }
   },
-  "checked_at": "07:20",
+  "checked_at": "07:03",
   "strong_buy": {
     "floor_incl": 14500,
     "floor_ex": 11600,
