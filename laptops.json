@@ -79,6 +79,23 @@
       "highlight": false,
       "pick": null,
       "why": "**Swedish-shop M2 Pro.** Back on the list now that Reuseit's M2 Pro is gone: 14,999 incl. (was 16,999), in stock, Inrego invoices with moms. Only ~410 kr above the refurbed US-keyboard one. Keyboard layout not stated (assumed Swedish); warranty not checked."
+    },
+    {
+      "id": "mba-m2-silver-reuseit-deal",
+      "kind": "mac",
+      "model": "MacBook Air 13\"",
+      "spec": "M2 · 16 GB · 512 GB · 2022 · Silver",
+      "url": "https://reuseit.se/sv/product/apple-macbook-air-m2-2022-apple-m2-cores-8-16-gb-512-gb-silver-good",
+      "shop": "Reuseit",
+      "grade": "Bra",
+      "price_ex": 7599,
+      "price_incl": 9499,
+      "why": "**Deal alert.** M2 Air 16/512 at 9,499 incl. (~7,599 ex), right at the 7,600 strong-buy price and ~2,800 kr cheaper than the next M2. Swedish keyboard, 2-year warranty, 30-day returns, 1.24 kg. Marked \"Få kvar i lager\" (few left). Page shows no margin-scheme note in the visible text; confirm full moms with Reuseit before paying.",
+      "highlight": true,
+      "pick": "Deal alert",
+      "approx": true,
+      "pick_text": "M2 Air 16/512 at the strong-buy price with a 2-year warranty and Swedish keyboard. Likely gone within a day.",
+      "found_at": "2026-11-23 09:15"
     }
   ],
   "new_reference": {
@@ -117,6 +134,10 @@
     "**X1 Carbon G10 i7-1255U, non-touch** (Reuseit, 5,999): sold out (2026-11-07); the i7-1265U touch G10 at the same price replaces it"
   ],
   "changes": [
+    {
+      "date": "2026-11-23",
+      "text": "Hourly deal: Reuseit M2 Air 16/512 (Bra) at 9,499 incl. (~7,599 ex), at the strong-buy price."
+    },
     {
       "date": "2026-11-23",
       "text": "Refurbed M2 Pro 14\" rose 14,485 → 15,385 incl. (12,308 ex). Added Blocket M1 Pro 14\" 16/512 at 8,500 (Söderköping, worth watching). Removed the two Tradera auctions that have ended (final prices not verifiable). Other shop prices and new M5 Air (15,990) unchanged."
