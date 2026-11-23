@@ -3,6 +3,23 @@
   "status": "refurbed M2 Pro rose to 15,385 incl.; TeknikFix, Inrego, refurbed M5/M1 Pro and new M5 Air (15,990) unchanged. Blocket re-checked: added an M1 Pro at 8,500, both older items still live. Couldn't scan or verify Tradera (blocked, so two ended auctions were removed), Inet, NetOnNet Fyndvaror, MacRent or Reuseit's full list (Reuseit shows only 8 GB M1 Airs).",
   "items": [
     {
+      "id": "mba-m5-new-alert",
+      "kind": "mac",
+      "model": "MacBook Air 13\"",
+      "spec": "M5 · 16 GB · 512 GB · new",
+      "url": "https://www.pricerunner.se/pl/27-3457446953/Laptops/Apple-13-inch-MacBook-Air-Apple-M5-chip-with-10-core-CPU-and-8-core-GPU-16GB-512GB-SSD-Midnight-priser",
+      "shop": "NetOnNet (new, all four colours)",
+      "grade": "New",
+      "price_ex": 11992,
+      "price_incl": 14990,
+      "approx": true,
+      "why": "**Deal alert.** New M5 Air 16/512 with Swedish keyboard and full warranty for ~11,992 ex moms at NetOnNet (14,990 incl., down from 15,990). Elgiganten and Komplett still 15,990. Not yet at the 14,500 floor. Buy via Företag mode and confirm the price holds at checkout.",
+      "highlight": true,
+      "pick": "Deal alert",
+      "pick_text": "New M5 Air 16/512 at NetOnNet's Black Week low of 14,990 incl., with full warranty.",
+      "found_at": "2026-11-23 16:15"
+    },
+    {
       "id": "mba-m2-space-gray-teknikfix",
       "kind": "mac",
       "model": "MacBook Air 13\"",
@@ -134,6 +151,10 @@
     "**X1 Carbon G10 i7-1255U, non-touch** (Reuseit, 5,999): sold out (2026-11-07); the i7-1265U touch G10 at the same price replaces it"
   ],
   "changes": [
+    {
+      "date": "2026-11-23",
+      "text": "Hourly deal: new M5 Air 16/512 at NetOnNet dropped to 14,990 incl. (~11,992 ex), at the alert threshold."
+    },
     {
       "date": "2026-11-23",
       "text": "Hourly deal: Reuseit M2 Air 16/512 (Bra) at 9,499 incl. (~7,599 ex), at the strong-buy price."
